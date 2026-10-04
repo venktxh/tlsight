@@ -1,0 +1,7 @@
+scapy>=2.5
+cryptography>=42
+pandas>=2.0
+streamlit>=1.40
+rich>=13
+pytest>=8
+certifi>=2023

@@ -1,0 +1,665 @@
+{
+  "source": "samples/synthetic_mixed.pcap",
+  "generated_at": "2026-10-04T12:11:13+00:00",
+  "connections": [
+    {
+      "id": 1,
+      "client": "192.168.1.50:51001",
+      "server": "203.0.113.10:443",
+      "sni": "modern.example",
+      "alpn": [
+        "h2",
+        "http/1.1"
+      ],
+      "client_legacy_version": 771,
+      "client_versions": [
+        14906,
+        772,
+        771
+      ],
+      "client_ciphers": [
+        14906,
+        4865,
+        4866,
+        4867,
+        49195,
+        49199,
+        49196,
+        49200,
+        52393,
+        52392,
+        49171,
+        49172,
+        156,
+        157,
+        47,
+        53
+      ],
+      "client_extensions": [
+        14906,
+        0,
+        23,
+        65281,
+        10,
+        11,
+        35,
+        16,
+        5,
+        13,
+        18,
+        51,
+        45,
+        43,
+        27
+      ],
+      "client_groups": [
+        14906,
+        4588,
+        29,
+        23,
+        24
+      ],
+      "client_point_formats": [
+        0
+      ],
+      "client_key_shares": [
+        4588,
+        29
+      ],
+      "version": 772,
+      "cipher": 4866,
+      "server_extensions": [
+        51,
+        43
+      ],
+      "key_share_group": 4588,
+      "ske_group": null,
+      "dh_bits": null,
+      "certs": [],
+      "cert_source": null,
+      "ja3": "771,4865-4866-4867-49195-49199-49196-49200-52393-52392-49171-49172-156-157-47-53,0-23-65281-10-11-35-16-5-13-18-51-45-43-27,4588-29-23-24,0",
+      "ja3_hash": "be0d04da95468020a3936c6531444976",
+      "ja3s": "771,4866,51-43",
+      "ja3s_hash": "907bf3ecef1c987c889946b737b43de8",
+      "findings": [
+        {
+          "severity": "LOW",
+          "title": "Client offers 4 weak cipher suite(s)",
+          "detail": "TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_256_GCM_SHA384, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_256_CBC_SHA",
+          "side": "client"
+        },
+        {
+          "severity": "INFO",
+          "title": "Certificate not visible (TLS 1.3)",
+          "detail": "TLS 1.3 encrypts the Certificate message. Re-run with --probe to fetch it.",
+          "side": "certificate"
+        },
+        {
+          "severity": "GOOD",
+          "title": "TLS 1.3 negotiated",
+          "detail": "Only AEAD ciphers, mandatory forward secrecy, encrypted certificate.",
+          "side": "server"
+        },
+        {
+          "severity": "GOOD",
+          "title": "AEAD cipher with forward secrecy",
+          "detail": "TLS_AES_256_GCM_SHA384",
+          "side": "server"
+        },
+        {
+          "severity": "GOOD",
+          "title": "Post-quantum hybrid key exchange",
+          "detail": "X25519MLKEM768 combines classical ECDH with ML-KEM (resists harvest-now-decrypt-later).",
+          "side": "server"
+        }
+      ],
+      "score": 100,
+      "grade": "A",
+      "notes": []
+    },
+    {
+      "id": 2,
+      "client": "192.168.1.50:51002",
+      "server": "203.0.113.20:443",
+      "sni": "shop.example",
+      "alpn": [
+        "h2",
+        "http/1.1"
+      ],
+      "client_legacy_version": 771,
+      "client_versions": [
+        14906,
+        772,
+        771
+      ],
+      "client_ciphers": [
+        14906,
+        4865,
+        4866,
+        4867,
+        49195,
+        49199,
+        49196,
+        49200,
+        52393,
+        52392,
+        49171,
+        49172,
+        156,
+        157,
+        47,
+        53
+      ],
+      "client_extensions": [
+        14906,
+        0,
+        23,
+        65281,
+        10,
+        11,
+        35,
+        16,
+        5,
+        13,
+        18,
+        51,
+        45,
+        43,
+        27
+      ],
+      "client_groups": [
+        14906,
+        4588,
+        29,
+        23,
+        24
+      ],
+      "client_point_formats": [
+        0
+      ],
+      "client_key_shares": [
+        29
+      ],
+      "version": 771,
+      "cipher": 49199,
+      "server_extensions": [
+        65281,
+        23,
+        11
+      ],
+      "key_share_group": null,
+      "ske_group": 29,
+      "dh_bits": null,
+      "certs": [
+        {
+          "subject": "shop.example",
+          "issuer": "Demo Root CA",
+          "serial": "276b08a898e497ef33b49d0366c60d01336bb534",
+          "not_before": "2026-09-04T12:11:10+00:00",
+          "not_after": "2027-10-04T12:11:10+00:00",
+          "days_left": 364,
+          "key_type": "EC secp256r1",
+          "key_size": 256,
+          "sig_hash": "sha256",
+          "self_signed": false,
+          "is_ca": false,
+          "san": [
+            "shop.example",
+            "www.shop.example"
+          ]
+        },
+        {
+          "subject": "Demo Root CA",
+          "issuer": "Demo Root CA",
+          "serial": "67fc68a6f0a3774ed9db5985d4bd4bd747bb85ab",
+          "not_before": "2025-08-30T12:11:10+00:00",
+          "not_after": "2034-12-21T12:11:10+00:00",
+          "days_left": 2999,
+          "key_type": "RSA",
+          "key_size": 2048,
+          "sig_hash": "sha256",
+          "self_signed": true,
+          "is_ca": true,
+          "san": []
+        }
+      ],
+      "cert_source": "pcap",
+      "ja3": "771,4865-4866-4867-49195-49199-49196-49200-52393-52392-49171-49172-156-157-47-53,0-23-65281-10-11-35-16-5-13-18-51-45-43-27,4588-29-23-24,0",
+      "ja3_hash": "be0d04da95468020a3936c6531444976",
+      "ja3s": "771,49199,65281-23-11",
+      "ja3s_hash": "31664de10b10b9eac390e9757a087b29",
+      "findings": [
+        {
+          "severity": "LOW",
+          "title": "Client offers 4 weak cipher suite(s)",
+          "detail": "TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_256_GCM_SHA384, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_256_CBC_SHA",
+          "side": "client"
+        },
+        {
+          "severity": "GOOD",
+          "title": "AEAD cipher with forward secrecy",
+          "detail": "TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256",
+          "side": "server"
+        },
+        {
+          "severity": "GOOD",
+          "title": "Certificate chain looks healthy",
+          "detail": "EC secp256r1 256-bit key, signed with sha256, 364 days of validity left.",
+          "side": "certificate"
+        }
+      ],
+      "score": 100,
+      "grade": "A",
+      "notes": []
+    },
+    {
+      "id": 3,
+      "client": "192.168.1.50:51003",
+      "server": "203.0.113.30:443",
+      "sni": "legacy.example",
+      "alpn": [
+        "h2",
+        "http/1.1"
+      ],
+      "client_legacy_version": 771,
+      "client_versions": [
+        14906,
+        772,
+        771
+      ],
+      "client_ciphers": [
+        14906,
+        4865,
+        4866,
+        4867,
+        49195,
+        49199,
+        49196,
+        49200,
+        52393,
+        52392,
+        49171,
+        49172,
+        156,
+        157,
+        47,
+        53
+      ],
+      "client_extensions": [
+        14906,
+        0,
+        23,
+        65281,
+        10,
+        11,
+        35,
+        16,
+        5,
+        13,
+        18,
+        51,
+        45,
+        43,
+        27
+      ],
+      "client_groups": [
+        14906,
+        4588,
+        29,
+        23,
+        24
+      ],
+      "client_point_formats": [
+        0
+      ],
+      "client_key_shares": [
+        29
+      ],
+      "version": 771,
+      "cipher": 47,
+      "server_extensions": [
+        23
+      ],
+      "key_share_group": null,
+      "ske_group": null,
+      "dh_bits": null,
+      "certs": [
+        {
+          "subject": "legacy.example",
+          "issuer": "Demo Root CA",
+          "serial": "65fe3ba609a6cf9018fa51bf1b6b5e3b999ce1e5",
+          "not_before": "2026-09-04T12:11:10+00:00",
+          "not_after": "2027-10-04T12:11:10+00:00",
+          "days_left": 364,
+          "key_type": "RSA",
+          "key_size": 2048,
+          "sig_hash": "sha1",
+          "self_signed": false,
+          "is_ca": false,
+          "san": [
+            "legacy.example"
+          ]
+        },
+        {
+          "subject": "Demo Root CA",
+          "issuer": "Demo Root CA",
+          "serial": "67fc68a6f0a3774ed9db5985d4bd4bd747bb85ab",
+          "not_before": "2025-08-30T12:11:10+00:00",
+          "not_after": "2034-12-21T12:11:10+00:00",
+          "days_left": 2999,
+          "key_type": "RSA",
+          "key_size": 2048,
+          "sig_hash": "sha256",
+          "self_signed": true,
+          "is_ca": true,
+          "san": []
+        }
+      ],
+      "cert_source": "pcap",
+      "ja3": "771,4865-4866-4867-49195-49199-49196-49200-52393-52392-49171-49172-156-157-47-53,0-23-65281-10-11-35-16-5-13-18-51-45-43-27,4588-29-23-24,0",
+      "ja3_hash": "be0d04da95468020a3936c6531444976",
+      "ja3s": "771,47,23",
+      "ja3s_hash": "e17bfbbb7398fa618c18f8b305d45e52",
+      "findings": [
+        {
+          "severity": "HIGH",
+          "title": "No forward secrecy",
+          "detail": "TLS_RSA_WITH_AES_128_CBC_SHA: Static RSA key exchange: anyone who later obtains the server's private key can decrypt every recorded session.",
+          "side": "server"
+        },
+        {
+          "severity": "MEDIUM",
+          "title": "CBC-mode cipher",
+          "detail": "TLS_RSA_WITH_AES_128_CBC_SHA: MAC-then-encrypt CBC has a history of padding-oracle attacks (BEAST, Lucky13, POODLE).",
+          "side": "server"
+        },
+        {
+          "severity": "MEDIUM",
+          "title": "No secure renegotiation",
+          "detail": "Server did not send renegotiation_info (RFC 5746): exposed to renegotiation injection.",
+          "side": "server"
+        },
+        {
+          "severity": "MEDIUM",
+          "title": "Leaf certificate signed with SHA-1",
+          "detail": "SHA-1 collisions are practical (SHAttered 2017); browsers reject SHA-1 certificates.",
+          "side": "certificate"
+        },
+        {
+          "severity": "LOW",
+          "title": "Client offers 4 weak cipher suite(s)",
+          "detail": "TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_256_GCM_SHA384, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_256_CBC_SHA",
+          "side": "client"
+        }
+      ],
+      "score": 50,
+      "grade": "D",
+      "notes": []
+    },
+    {
+      "id": 4,
+      "client": "192.168.1.50:51004",
+      "server": "192.168.1.1:8443",
+      "sni": "old-router.local",
+      "alpn": [],
+      "client_legacy_version": 769,
+      "client_versions": [],
+      "client_ciphers": [
+        5,
+        4,
+        10,
+        47,
+        53,
+        255
+      ],
+      "client_extensions": [
+        0
+      ],
+      "client_groups": [],
+      "client_point_formats": [],
+      "client_key_shares": [],
+      "version": 769,
+      "cipher": 5,
+      "server_extensions": [],
+      "key_share_group": null,
+      "ske_group": null,
+      "dh_bits": null,
+      "certs": [
+        {
+          "subject": "old-router.local",
+          "issuer": "old-router.local",
+          "serial": "32a7f61f0261936245bf87ce7d718d199db86ed4",
+          "not_before": "2021-04-13T12:11:10+00:00",
+          "not_after": "2026-06-26T12:11:10+00:00",
+          "days_left": -101,
+          "key_type": "RSA",
+          "key_size": 1024,
+          "sig_hash": "sha256",
+          "self_signed": true,
+          "is_ca": false,
+          "san": [
+            "old-router.local"
+          ]
+        }
+      ],
+      "cert_source": "pcap",
+      "ja3": "769,5-4-10-47-53-255,0,,",
+      "ja3_hash": "1e956a34336bbf16509aa7c695dd906d",
+      "ja3s": "769,5,",
+      "ja3s_hash": "9aeeb84942a46257594025306635f0ff",
+      "findings": [
+        {
+          "severity": "CRITICAL",
+          "title": "TLS 1.0 negotiated",
+          "detail": "TLS 1.0 is deprecated (RFC 8996): BEAST, no AEAD, MD5/SHA-1 PRF.",
+          "side": "server"
+        },
+        {
+          "severity": "CRITICAL",
+          "title": "RC4 stream cipher",
+          "detail": "TLS_RSA_WITH_RC4_128_SHA: RC4 keystream biases leak plaintext; RFC 7465 forbids RC4 in TLS.",
+          "side": "server"
+        },
+        {
+          "severity": "CRITICAL",
+          "title": "Leaf certificate expired",
+          "detail": "Expired 101 days ago (notAfter 2026-06-26).",
+          "side": "certificate"
+        },
+        {
+          "severity": "CRITICAL",
+          "title": "Leaf certificate uses a weak 1024-bit RSA key",
+          "detail": "RSA keys below 2048 bits are within reach of factoring attacks (NIST SP 800-131A).",
+          "side": "certificate"
+        },
+        {
+          "severity": "HIGH",
+          "title": "No forward secrecy",
+          "detail": "TLS_RSA_WITH_RC4_128_SHA: Static RSA key exchange: anyone who later obtains the server's private key can decrypt every recorded session.",
+          "side": "server"
+        },
+        {
+          "severity": "HIGH",
+          "title": "Self-signed certificate",
+          "detail": "Not issued by a trusted CA, so the server's identity can't be authenticated (MITM risk).",
+          "side": "certificate"
+        },
+        {
+          "severity": "MEDIUM",
+          "title": "Client supports at most TLS 1.0",
+          "detail": "Client software is outdated and cannot negotiate TLS 1.2+.",
+          "side": "client"
+        },
+        {
+          "severity": "MEDIUM",
+          "title": "No secure renegotiation",
+          "detail": "Server did not send renegotiation_info (RFC 5746): exposed to renegotiation injection.",
+          "side": "server"
+        },
+        {
+          "severity": "LOW",
+          "title": "Client offers 5 weak cipher suite(s)",
+          "detail": "TLS_RSA_WITH_RC4_128_SHA, TLS_RSA_WITH_RC4_128_MD5, TLS_RSA_WITH_3DES_EDE_CBC_SHA, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_256_CBC_SHA",
+          "side": "client"
+        }
+      ],
+      "score": 0,
+      "grade": "F",
+      "notes": []
+    },
+    {
+      "id": 5,
+      "client": "192.168.1.50:51005",
+      "server": "10.0.0.5:443",
+      "sni": "intranet.example",
+      "alpn": [
+        "h2",
+        "http/1.1"
+      ],
+      "client_legacy_version": 771,
+      "client_versions": [
+        14906,
+        772,
+        771
+      ],
+      "client_ciphers": [
+        14906,
+        4865,
+        4866,
+        4867,
+        49195,
+        49199,
+        49196,
+        49200,
+        52393,
+        52392,
+        49171,
+        49172,
+        156,
+        157,
+        47,
+        53
+      ],
+      "client_extensions": [
+        14906,
+        0,
+        23,
+        65281,
+        10,
+        11,
+        35,
+        16,
+        5,
+        13,
+        18,
+        51,
+        45,
+        43,
+        27
+      ],
+      "client_groups": [
+        14906,
+        4588,
+        29,
+        23,
+        24
+      ],
+      "client_point_formats": [
+        0
+      ],
+      "client_key_shares": [
+        29
+      ],
+      "version": 771,
+      "cipher": 22,
+      "server_extensions": [
+        65281,
+        23,
+        11
+      ],
+      "key_share_group": null,
+      "ske_group": null,
+      "dh_bits": 1024,
+      "certs": [
+        {
+          "subject": "wiki.corp.example",
+          "issuer": "Demo Root CA",
+          "serial": "5fc1a933efa3925a75ad685a1e862f6e60b4d425",
+          "not_before": "2026-09-04T12:11:10+00:00",
+          "not_after": "2027-10-04T12:11:10+00:00",
+          "days_left": 364,
+          "key_type": "EC secp256r1",
+          "key_size": 256,
+          "sig_hash": "sha256",
+          "self_signed": false,
+          "is_ca": false,
+          "san": [
+            "wiki.corp.example"
+          ]
+        },
+        {
+          "subject": "Demo Root CA",
+          "issuer": "Demo Root CA",
+          "serial": "67fc68a6f0a3774ed9db5985d4bd4bd747bb85ab",
+          "not_before": "2025-08-30T12:11:10+00:00",
+          "not_after": "2034-12-21T12:11:10+00:00",
+          "days_left": 2999,
+          "key_type": "RSA",
+          "key_size": 2048,
+          "sig_hash": "sha256",
+          "self_signed": true,
+          "is_ca": true,
+          "san": []
+        }
+      ],
+      "cert_source": "pcap",
+      "ja3": "771,4865-4866-4867-49195-49199-49196-49200-52393-52392-49171-49172-156-157-47-53,0-23-65281-10-11-35-16-5-13-18-51-45-43-27,4588-29-23-24,0",
+      "ja3_hash": "be0d04da95468020a3936c6531444976",
+      "ja3s": "771,22,65281-23-11",
+      "ja3s_hash": "21a8076a594cc46d512a831a567b555a",
+      "findings": [
+        {
+          "severity": "HIGH",
+          "title": "3DES cipher (Sweet32)",
+          "detail": "TLS_DHE_RSA_WITH_3DES_EDE_CBC_SHA: 64-bit block size: birthday collisions after ~32 GB on one connection (CVE-2016-2183).",
+          "side": "server"
+        },
+        {
+          "severity": "HIGH",
+          "title": "Weak 1024-bit DH group",
+          "detail": "1024-bit DH is within reach of nation-state precomputation (Logjam).",
+          "side": "server"
+        },
+        {
+          "severity": "HIGH",
+          "title": "Certificate hostname mismatch",
+          "detail": "'intranet.example' is not covered by wiki.corp.example.",
+          "side": "certificate"
+        },
+        {
+          "severity": "MEDIUM",
+          "title": "CBC-mode cipher",
+          "detail": "TLS_DHE_RSA_WITH_3DES_EDE_CBC_SHA: MAC-then-encrypt CBC has a history of padding-oracle attacks (BEAST, Lucky13, POODLE).",
+          "side": "server"
+        },
+        {
+          "severity": "LOW",
+          "title": "Client offers 4 weak cipher suite(s)",
+          "detail": "TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_256_GCM_SHA384, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_256_CBC_SHA",
+          "side": "client"
+        }
+      ],
+      "score": 30,
+      "grade": "F",
+      "notes": []
+    }
+  ],
+  "summary": {
+    "connections": 5,
+    "grades": {
+      "A": 2,
+      "D": 1,
+      "F": 2
+    }
+  }
+}

@@ -1,0 +1,4329 @@
+{
+ "sslyze_version": "6.3.1",
+ "date_scans_started": "2026-10-04T12:38:53.087113Z",
+ "date_scans_completed": "2026-10-04T12:40:06.563807Z",
+ "note": "Trimmed from the full sslyze --json_out: only the fields tools/compare_sslyze.py uses. Full human-readable output: sslyze_output.txt",
+ "server_scan_results": [
+  {
+   "server_location": {
+    "hostname": "example.com",
+    "port": 443,
+    "ip_address": "104.20.23.154"
+   },
+   "scan_status": "COMPLETED",
+   "connectivity_status": "COMPLETED",
+   "scan_result": {
+    "ssl_3_0_cipher_suites": {
+     "result": {
+      "accepted_cipher_suites": []
+     }
+    },
+    "tls_1_0_cipher_suites": {
+     "result": {
+      "accepted_cipher_suites": []
+     }
+    },
+    "tls_1_1_cipher_suites": {
+     "result": {
+      "accepted_cipher_suites": [
+       {
+        "cipher_suite": {
+         "name": "TLS_RSA_WITH_AES_256_CBC_SHA",
+         "is_anonymous": false,
+         "key_size": 256
+        },
+        "ephemeral_key": null
+       },
+       {
+        "cipher_suite": {
+         "name": "TLS_RSA_WITH_AES_128_CBC_SHA",
+         "is_anonymous": false,
+         "key_size": 128
+        },
+        "ephemeral_key": null
+       },
+       {
+        "cipher_suite": {
+         "name": "TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA",
+         "is_anonymous": false,
+         "key_size": 256
+        },
+        "ephemeral_key": {
+         "type_name": "ECDH",
+         "size": 256,
+         "curve_name": "secp256r1"
+        }
+       },
+       {
+        "cipher_suite": {
+         "name": "TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA",
+         "is_anonymous": false,
+         "key_size": 128
+        },
+        "ephemeral_key": {
+         "type_name": "ECDH",
+         "size": 256,
+         "curve_name": "secp256r1"
+        }
+       }
+      ]
+     }
+    },
+    "tls_1_2_cipher_suites": {
+     "result": {
+      "accepted_cipher_suites": [
+       {
+        "cipher_suite": {
+         "name": "TLS_RSA_WITH_AES_256_GCM_SHA384",
+         "is_anonymous": false,
+         "key_size": 256
+        },
+        "ephemeral_key": null
+       },
+       {
+        "cipher_suite": {
+         "name": "TLS_RSA_WITH_AES_256_CBC_SHA256",
+         "is_anonymous": false,
+         "key_size": 256
+        },
+        "ephemeral_key": null
+       },
+       {
+        "cipher_suite": {
+         "name": "TLS_RSA_WITH_AES_256_CBC_SHA",
+         "is_anonymous": false,
+         "key_size": 256
+        },
+        "ephemeral_key": null
+       },
+       {
+        "cipher_suite": {
+         "name": "TLS_RSA_WITH_AES_128_GCM_SHA256",
+         "is_anonymous": false,
+         "key_size": 128
+        },
+        "ephemeral_key": null
+       },
+       {
+        "cipher_suite": {
+         "name": "TLS_RSA_WITH_AES_128_CBC_SHA256",
+         "is_anonymous": false,
+         "key_size": 128
+        },
+        "ephemeral_key": null
+       },
+       {
+        "cipher_suite": {
+         "name": "TLS_RSA_WITH_AES_128_CBC_SHA",
+         "is_anonymous": false,
+         "key_size": 128
+        },
+        "ephemeral_key": null
+       },
+       {
+        "cipher_suite": {
+         "name": "TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256",
+         "is_anonymous": false,
+         "key_size": 256
+        },
+        "ephemeral_key": {
+         "type_name": "ECDH",
+         "size": 253,
+         "curve_name": "X25519"
+        }
+       },
+       {
+        "cipher_suite": {
+         "name": "TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384",
+         "is_anonymous": false,
+         "key_size": 256
+        },
+        "ephemeral_key": {
+         "type_name": "ECDH",
+         "size": 256,
+         "curve_name": "secp256r1"
+        }
+       },
+       {
+        "cipher_suite": {
+         "name": "TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384",
+         "is_anonymous": false,
+         "key_size": 256
+        },
+        "ephemeral_key": {
+         "type_name": "ECDH",
+         "size": 256,
+         "curve_name": "secp256r1"
+        }
+       },
+       {
+        "cipher_suite": {
+         "name": "TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA",
+         "is_anonymous": false,
+         "key_size": 256
+        },
+        "ephemeral_key": {
+         "type_name": "ECDH",
+         "size": 256,
+         "curve_name": "secp256r1"
+        }
+       },
+       {
+        "cipher_suite": {
+         "name": "TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256",
+         "is_anonymous": false,
+         "key_size": 128
+        },
+        "ephemeral_key": {
+         "type_name": "ECDH",
+         "size": 256,
+         "curve_name": "secp256r1"
+        }
+       },
+       {
+        "cipher_suite": {
+         "name": "TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256",
+         "is_anonymous": false,
+         "key_size": 128
+        },
+        "ephemeral_key": {
+         "type_name": "ECDH",
+         "size": 256,
+         "curve_name": "secp256r1"
+        }
+       },
+       {
+        "cipher_suite": {
+         "name": "TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA",
+         "is_anonymous": false,
+         "key_size": 128
+        },
+        "ephemeral_key": {
+         "type_name": "ECDH",
+         "size": 256,
+         "curve_name": "secp256r1"
+        }
+       },
+       {
+        "cipher_suite": {
+         "name": "TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305_SHA256",
+         "is_anonymous": false,
+         "key_size": 256
+        },
+        "ephemeral_key": {
+         "type_name": "ECDH",
+         "size": 253,
+         "curve_name": "X25519"
+        }
+       },
+       {
+        "cipher_suite": {
+         "name": "TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384",
+         "is_anonymous": false,
+         "key_size": 256
+        },
+        "ephemeral_key": {
+         "type_name": "ECDH",
+         "size": 256,
+         "curve_name": "secp256r1"
+        }
+       },
+       {
+        "cipher_suite": {
+         "name": "TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA384",
+         "is_anonymous": false,
+         "key_size": 256
+        },
+        "ephemeral_key": {
+         "type_name": "ECDH",
+         "size": 256,
+         "curve_name": "secp256r1"
+        }
+       },
+       {
+        "cipher_suite": {
+         "name": "TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA",
+         "is_anonymous": false,
+         "key_size": 256
+        },
+        "ephemeral_key": {
+         "type_name": "ECDH",
+         "size": 256,
+         "curve_name": "secp256r1"
+        }
+       },
+       {
+        "cipher_suite": {
+         "name": "TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256",
+         "is_anonymous": false,
+         "key_size": 128
+        },
+        "ephemeral_key": {
+         "type_name": "ECDH",
+         "size": 256,
+         "curve_name": "secp256r1"
+        }
+       },
+       {
+        "cipher_suite": {
+         "name": "TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256",
+         "is_anonymous": false,
+         "key_size": 128
+        },
+        "ephemeral_key": {
+         "type_name": "ECDH",
+         "size": 256,
+         "curve_name": "secp256r1"
+        }
+       },
+       {
+        "cipher_suite": {
+         "name": "TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA",
+         "is_anonymous": false,
+         "key_size": 128
+        },
+        "ephemeral_key": {
+         "type_name": "ECDH",
+         "size": 256,
+         "curve_name": "secp256r1"
+        }
+       }
+      ]
+     }
+    },
+    "tls_1_3_cipher_suites": {
+     "result": {
+      "accepted_cipher_suites": [
+       {
+        "cipher_suite": {
+         "name": "TLS_CHACHA20_POLY1305_SHA256",
+         "is_anonymous": false,
+         "key_size": 256
+        },
+        "ephemeral_key": {
+         "type_name": "ECDH",
+         "size": 253,
+         "curve_name": "X25519"
+        }
+       },
+       {
+        "cipher_suite": {
+         "name": "TLS_AES_256_GCM_SHA384",
+         "is_anonymous": false,
+         "key_size": 256
+        },
+        "ephemeral_key": {
+         "type_name": "ECDH",
+         "size": 253,
+         "curve_name": "X25519"
+        }
+       },
+       {
+        "cipher_suite": {
+         "name": "TLS_AES_128_GCM_SHA256",
+         "is_anonymous": false,
+         "key_size": 128
+        },
+        "ephemeral_key": {
+         "type_name": "ECDH",
+         "size": 253,
+         "curve_name": "X25519"
+        }
+       }
+      ]
+     }
+    },
+    "certificate_info": {
+     "result": {
+      "certificate_deployments": [
+       {
+        "path_validation_results": [
+         {
+          "trust_store": {
+           "name": "Android",
+           "version": "16.0.0_r4"
+          },
+          "was_validation_successful": true,
+          "validation_error": null
+         },
+         {
+          "trust_store": {
+           "name": "Apple",
+           "version": "iOS 26, iPadOS 26, macOS 26, tvOS 26, visionOS 26 and watchOS 26"
+          },
+          "was_validation_successful": true,
+          "validation_error": null
+         },
+         {
+          "trust_store": {
+           "name": "Java",
+           "version": "jdk-13.0.2"
+          },
+          "was_validation_successful": true,
+          "validation_error": null
+         },
+         {
+          "trust_store": {
+           "name": "Mozilla",
+           "version": "2026-03-28"
+          },
+          "was_validation_successful": true,
+          "validation_error": null
+         },
+         {
+          "trust_store": {
+           "name": "Windows",
+           "version": "2026-03-28"
+          },
+          "was_validation_successful": true,
+          "validation_error": null
+         }
+        ],
+        "received_certificate_chain": [
+         {
+          "subject": "CN=example.com",
+          "not_valid_before": "2026-09-26T22:49:11Z",
+          "not_valid_after": "2026-12-25T22:56:35Z"
+         },
+         {
+          "subject": "CN=Cloudflare TLS Issuing ECC CA 3,O=SSL Corporation,C=US",
+          "not_valid_before": "2025-05-29T19:49:45Z",
+          "not_valid_after": "2035-05-27T19:49:44Z"
+         },
+         {
+          "subject": "CN=SSL.com TLS Transit ECC CA R2,O=SSL Corporation,C=US",
+          "not_valid_before": "2022-10-21T17:02:23Z",
+          "not_valid_after": "2037-10-17T17:02:22Z"
+         },
+         {
+          "subject": "CN=SSL.com TLS ECC Root CA 2022,O=SSL Corporation,C=US",
+          "not_valid_before": "2025-08-01T00:00:00Z",
+          "not_valid_after": "2028-12-31T23:59:59Z"
+         }
+        ]
+       },
+       {
+        "path_validation_results": [
+         {
+          "trust_store": {
+           "name": "Android",
+           "version": "16.0.0_r4"
+          },
+          "was_validation_successful": true,
+          "validation_error": null
+         },
+         {
+          "trust_store": {
+           "name": "Apple",
+           "version": "iOS 26, iPadOS 26, macOS 26, tvOS 26, visionOS 26 and watchOS 26"
+          },
+          "was_validation_successful": true,
+          "validation_error": null
+         },
+         {
+          "trust_store": {
+           "name": "Java",
+           "version": "jdk-13.0.2"
+          },
+          "was_validation_successful": true,
+          "validation_error": null
+         },
+         {
+          "trust_store": {
+           "name": "Mozilla",
+           "version": "2026-03-28"
+          },
+          "was_validation_successful": true,
+          "validation_error": null
+         },
+         {
+          "trust_store": {
+           "name": "Windows",
+           "version": "2026-03-28"
+          },
+          "was_validation_successful": true,
+          "validation_error": null
+         }
+        ],
+        "received_certificate_chain": [
+         {
+          "subject": "CN=example.com",
+          "not_valid_before": "2026-09-26T22:48:57Z",
+          "not_valid_after": "2026-12-25T22:56:35Z"
+         },
+         {
+          "subject": "CN=Cloudflare TLS Issuing RSA CA 3,O=SSL Corporation,C=US",
+          "not_valid_before": "2025-05-29T19:51:16Z",
+          "not_valid_after": "2035-05-27T19:51:15Z"
+         },
+         {
+          "subject": "CN=SSL.com TLS Transit RSA CA R2,O=SSL Corporation,C=US",
+          "not_valid_before": "2022-10-21T17:02:36Z",
+          "not_valid_after": "2037-10-17T17:02:35Z"
+         },
+         {
+          "subject": "CN=SSL.com TLS RSA Root CA 2022,O=SSL Corporation,C=US",
+          "not_valid_before": "2025-08-01T00:00:00Z",
+          "not_valid_after": "2028-12-31T23:59:59Z"
+         }
+        ]
+       }
+      ]
+     }
+    }
+   }
+  },
+  {
+   "server_location": {
+    "hostname": "microsoft.com",
+    "port": 443,
+    "ip_address": "150.171.110.88"
+   },
+   "scan_status": "COMPLETED",
+   "connectivity_status": "COMPLETED",
+   "scan_result": {
+    "ssl_3_0_cipher_suites": {
+     "result": {
+      "accepted_cipher_suites": []
+     }
+    },
+    "tls_1_0_cipher_suites": {
+     "result": {
+      "accepted_cipher_suites": []
+     }
+    },
+    "tls_1_1_cipher_suites": {
+     "result": {
+      "accepted_cipher_suites": []
+     }
+    },
+    "tls_1_2_cipher_suites": {
+     "result": {
+      "accepted_cipher_suites": [
+       {
+        "cipher_suite": {
+         "name": "TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384",
+         "is_anonymous": false,
+         "key_size": 256
+        },
+        "ephemeral_key": {
+         "type_name": "ECDH",
+         "size": 256,
+         "curve_name": "secp256r1"
+        }
+       },
+       {
+        "cipher_suite": {
+         "name": "TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256",
+         "is_anonymous": false,
+         "key_size": 128
+        },
+        "ephemeral_key": {
+         "type_name": "ECDH",
+         "size": 256,
+         "curve_name": "secp256r1"
+        }
+       }
+      ]
+     }
+    },
+    "tls_1_3_cipher_suites": {
+     "result": {
+      "accepted_cipher_suites": [
+       {
+        "cipher_suite": {
+         "name": "TLS_AES_256_GCM_SHA384",
+         "is_anonymous": false,
+         "key_size": 256
+        },
+        "ephemeral_key": {
+         "type_name": "ECDH",
+         "size": 256,
+         "curve_name": "secp256r1"
+        }
+       },
+       {
+        "cipher_suite": {
+         "name": "TLS_AES_128_GCM_SHA256",
+         "is_anonymous": false,
+         "key_size": 128
+        },
+        "ephemeral_key": {
+         "type_name": "ECDH",
+         "size": 256,
+         "curve_name": "secp256r1"
+        }
+       }
+      ]
+     }
+    },
+    "certificate_info": {
+     "result": {
+      "certificate_deployments": [
+       {
+        "path_validation_results": [
+         {
+          "trust_store": {
+           "name": "Android",
+           "version": "16.0.0_r4"
+          },
+          "was_validation_successful": true,
+          "validation_error": null
+         },
+         {
+          "trust_store": {
+           "name": "Apple",
+           "version": "iOS 26, iPadOS 26, macOS 26, tvOS 26, visionOS 26 and watchOS 26"
+          },
+          "was_validation_successful": true,
+          "validation_error": null
+         },
+         {
+          "trust_store": {
+           "name": "Java",
+           "version": "jdk-13.0.2"
+          },
+          "was_validation_successful": true,
+          "validation_error": null
+         },
+         {
+          "trust_store": {
+           "name": "Mozilla",
+           "version": "2026-03-28"
+          },
+          "was_validation_successful": true,
+          "validation_error": null
+         },
+         {
+          "trust_store": {
+           "name": "Windows",
+           "version": "2026-03-28"
+          },
+          "was_validation_successful": true,
+          "validation_error": null
+         }
+        ],
+        "received_certificate_chain": [
+         {
+          "subject": "CN=microsoft.com,O=Microsoft Corporation,L=Redmond,ST=WA,C=US",
+          "not_valid_before": "2026-06-23T09:04:17Z",
+          "not_valid_after": "2026-12-20T09:04:17Z"
+         },
+         {
+          "subject": "CN=Microsoft TLS G2 RSA CA OCSP 04,O=Microsoft Corporation,C=US",
+          "not_valid_before": "2025-08-01T20:02:59Z",
+          "not_valid_after": "2029-06-03T20:02:59Z"
+         },
+         {
+          "subject": "CN=Microsoft TLS RSA Root G2,O=Microsoft Corporation,C=US",
+          "not_valid_before": "2025-05-21T00:00:00Z",
+          "not_valid_after": "2029-06-19T23:59:59Z"
+         },
+         {
+          "subject": "CN=DigiCert Global Root G2,OU=www.digicert.com,O=DigiCert Inc,C=US",
+          "not_valid_before": "2013-08-01T12:00:00Z",
+          "not_valid_after": "2038-01-15T12:00:00Z"
+         }
+        ]
+       }
+      ]
+     }
+    }
+   }
+  },
+  {
+   "server_location": {
+    "hostname": "tls-v1-0.badssl.com",
+    "port": 1010,
+    "ip_address": "104.154.89.105"
+   },
+   "scan_status": "ERROR_NO_CONNECTIVITY",
+   "connectivity_status": "ERROR",
+   "scan_result": {}
+  },
+  {
+   "server_location": {
+    "hostname": "github.com",
+    "port": 443,
+    "ip_address": "20.207.73.82"
+   },
+   "scan_status": "COMPLETED",
+   "connectivity_status": "COMPLETED",
+   "scan_result": {
+    "ssl_3_0_cipher_suites": {
+     "result": {
+      "accepted_cipher_suites": []
+     }
+    },
+    "tls_1_0_cipher_suites": {
+     "result": {
+      "accepted_cipher_suites": []
+     }
+    },
+    "tls_1_1_cipher_suites": {
+     "result": {
+      "accepted_cipher_suites": []
+     }
+    },
+    "tls_1_2_cipher_suites": {
+     "result": {
+      "accepted_cipher_suites": [
+       {
+        "cipher_suite": {
+         "name": "TLS_RSA_WITH_AES_256_GCM_SHA384",
+         "is_anonymous": false,
+         "key_size": 256
+        },
+        "ephemeral_key": null
+       },
+       {
+        "cipher_suite": {
+         "name": "TLS_RSA_WITH_AES_256_CBC_SHA256",
+         "is_anonymous": false,
+         "key_size": 256
+        },
+        "ephemeral_key": null
+       },
+       {
+        "cipher_suite": {
+         "name": "TLS_RSA_WITH_AES_128_GCM_SHA256",
+         "is_anonymous": false,
+         "key_size": 128
+        },
+        "ephemeral_key": null
+       },
+       {
+        "cipher_suite": {
+         "name": "TLS_RSA_WITH_AES_128_CBC_SHA256",
+         "is_anonymous": false,
+         "key_size": 128
+        },
+        "ephemeral_key": null
+       },
+       {
+        "cipher_suite": {
+         "name": "TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256",
+         "is_anonymous": false,
+         "key_size": 256
+        },
+        "ephemeral_key": {
+         "type_name": "ECDH",
+         "size": 253,
+         "curve_name": "X25519"
+        }
+       },
+       {
+        "cipher_suite": {
+         "name": "TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384",
+         "is_anonymous": false,
+         "key_size": 256
+        },
+        "ephemeral_key": {
+         "type_name": "ECDH",
+         "size": 256,
+         "curve_name": "secp256r1"
+        }
+       },
+       {
+        "cipher_suite": {
+         "name": "TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384",
+         "is_anonymous": false,
+         "key_size": 256
+        },
+        "ephemeral_key": {
+         "type_name": "ECDH",
+         "size": 256,
+         "curve_name": "secp256r1"
+        }
+       },
+       {
+        "cipher_suite": {
+         "name": "TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256",
+         "is_anonymous": false,
+         "key_size": 128
+        },
+        "ephemeral_key": {
+         "type_name": "ECDH",
+         "size": 256,
+         "curve_name": "secp256r1"
+        }
+       },
+       {
+        "cipher_suite": {
+         "name": "TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256",
+         "is_anonymous": false,
+         "key_size": 128
+        },
+        "ephemeral_key": {
+         "type_name": "ECDH",
+         "size": 256,
+         "curve_name": "secp256r1"
+        }
+       },
+       {
+        "cipher_suite": {
+         "name": "TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305_SHA256",
+         "is_anonymous": false,
+         "key_size": 256
+        },
+        "ephemeral_key": {
+         "type_name": "ECDH",
+         "size": 253,
+         "curve_name": "X25519"
+        }
+       },
+       {
+        "cipher_suite": {
+         "name": "TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384",
+         "is_anonymous": false,
+         "key_size": 256
+        },
+        "ephemeral_key": {
+         "type_name": "ECDH",
+         "size": 256,
+         "curve_name": "secp256r1"
+        }
+       },
+       {
+        "cipher_suite": {
+         "name": "TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA384",
+         "is_anonymous": false,
+         "key_size": 256
+        },
+        "ephemeral_key": {
+         "type_name": "ECDH",
+         "size": 256,
+         "curve_name": "secp256r1"
+        }
+       },
+       {
+        "cipher_suite": {
+         "name": "TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256",
+         "is_anonymous": false,
+         "key_size": 128
+        },
+        "ephemeral_key": {
+         "type_name": "ECDH",
+         "size": 256,
+         "curve_name": "secp256r1"
+        }
+       },
+       {
+        "cipher_suite": {
+         "name": "TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256",
+         "is_anonymous": false,
+         "key_size": 128
+        },
+        "ephemeral_key": {
+         "type_name": "ECDH",
+         "size": 256,
+         "curve_name": "secp256r1"
+        }
+       }
+      ]
+     }
+    },
+    "tls_1_3_cipher_suites": {
+     "result": {
+      "accepted_cipher_suites": [
+       {
+        "cipher_suite": {
+         "name": "TLS_CHACHA20_POLY1305_SHA256",
+         "is_anonymous": false,
+         "key_size": 256
+        },
+        "ephemeral_key": {
+         "type_name": "ECDH",
+         "size": 253,
+         "curve_name": "X25519"
+        }
+       },
+       {
+        "cipher_suite": {
+         "name": "TLS_AES_256_GCM_SHA384",
+         "is_anonymous": false,
+         "key_size": 256
+        },
+        "ephemeral_key": {
+         "type_name": "ECDH",
+         "size": 253,
+         "curve_name": "X25519"
+        }
+       },
+       {
+        "cipher_suite": {
+         "name": "TLS_AES_128_GCM_SHA256",
+         "is_anonymous": false,
+         "key_size": 128
+        },
+        "ephemeral_key": {
+         "type_name": "ECDH",
+         "size": 253,
+         "curve_name": "X25519"
+        }
+       }
+      ]
+     }
+    },
+    "certificate_info": {
+     "result": {
+      "certificate_deployments": [
+       {
+        "path_validation_results": [
+         {
+          "trust_store": {
+           "name": "Android",
+           "version": "16.0.0_r4"
+          },
+          "was_validation_successful": true,
+          "validation_error": null
+         },
+         {
+          "trust_store": {
+           "name": "Apple",
+           "version": "iOS 26, iPadOS 26, macOS 26, tvOS 26, visionOS 26 and watchOS 26"
+          },
+          "was_validation_successful": true,
+          "validation_error": null
+         },
+         {
+          "trust_store": {
+           "name": "Java",
+           "version": "jdk-13.0.2"
+          },
+          "was_validation_successful": true,
+          "validation_error": null
+         },
+         {
+          "trust_store": {
+           "name": "Mozilla",
+           "version": "2026-03-28"
+          },
+          "was_validation_successful": true,
+          "validation_error": null
+         },
+         {
+          "trust_store": {
+           "name": "Windows",
+           "version": "2026-03-28"
+          },
+          "was_validation_successful": true,
+          "validation_error": null
+         }
+        ],
+        "received_certificate_chain": [
+         {
+          "subject": "CN=github.com",
+          "not_valid_before": "2026-09-01T00:00:00Z",
+          "not_valid_after": "2026-11-29T23:59:59Z"
+         },
+         {
+          "subject": "CN=Sectigo Public Server Authentication CA DV E36,O=Sectigo Limited,C=GB",
+          "not_valid_before": "2021-03-22T00:00:00Z",
+          "not_valid_after": "2036-03-21T23:59:59Z"
+         },
+         {
+          "subject": "CN=Sectigo Public Server Authentication Root E46,O=Sectigo Limited,C=GB",
+          "not_valid_before": "2021-03-22T00:00:00Z",
+          "not_valid_after": "2038-01-18T23:59:59Z"
+         }
+        ]
+       },
+       {
+        "path_validation_results": [
+         {
+          "trust_store": {
+           "name": "Android",
+           "version": "16.0.0_r4"
+          },
+          "was_validation_successful": true,
+          "validation_error": null
+         },
+         {
+          "trust_store": {
+           "name": "Apple",
+           "version": "iOS 26, iPadOS 26, macOS 26, tvOS 26, visionOS 26 and watchOS 26"
+          },
+          "was_validation_successful": true,
+          "validation_error": null
+         },
+         {
+          "trust_store": {
+           "name": "Java",
+           "version": "jdk-13.0.2"
+          },
+          "was_validation_successful": true,
+          "validation_error": null
+         },
+         {
+          "trust_store": {
+           "name": "Mozilla",
+           "version": "2026-03-28"
+          },
+          "was_validation_successful": true,
+          "validation_error": null
+         },
+         {
+          "trust_store": {
+           "name": "Windows",
+           "version": "2026-03-28"
+          },
+          "was_validation_successful": true,
+          "validation_error": null
+         }
+        ],
+        "received_certificate_chain": [
+         {
+          "subject": "CN=github.com",
+          "not_valid_before": "2026-10-02T00:00:00Z",
+          "not_valid_after": "2026-12-30T23:59:59Z"
+         },
+         {
+          "subject": "CN=Sectigo Public Server Authentication CA DV R36,O=Sectigo Limited,C=GB",
+          "not_valid_before": "2021-03-22T00:00:00Z",
+          "not_valid_after": "2036-03-21T23:59:59Z"
+         },
+         {
+          "subject": "CN=Sectigo Public Server Authentication Root R46,O=Sectigo Limited,C=GB",
+          "not_valid_before": "2021-03-22T00:00:00Z",
+          "not_valid_after": "2038-01-18T23:59:59Z"
+         }
+        ]
+       }
+      ]
+     }
+    }
+   }
+  },
+  {
+   "server_location": {
+    "hostname": "dh1024.badssl.com",
+    "port": 443,
+    "ip_address": "104.154.89.105"
+   },
+   "scan_status": "COMPLETED",
+   "connectivity_status": "COMPLETED",
+   "scan_result": {
+    "ssl_3_0_cipher_suites": {
+     "result": {
+      "accepted_cipher_suites": []
+     }
+    },
+    "tls_1_0_cipher_suites": {
+     "result": {
+      "accepted_cipher_suites": []
+     }
+    },
+    "tls_1_1_cipher_suites": {
+     "result": {
+      "accepted_cipher_suites": [
+       {
+        "cipher_suite": {
+         "name": "TLS_DHE_RSA_WITH_AES_256_CBC_SHA",
+         "is_anonymous": false,
+         "key_size": 256
+        },
+        "ephemeral_key": {
+         "type_name": "DH",
+         "size": 1024,
+         "curve_name": null
+        }
+       },
+       {
+        "cipher_suite": {
+         "name": "TLS_DHE_RSA_WITH_AES_128_CBC_SHA",
+         "is_anonymous": false,
+         "key_size": 128
+        },
+        "ephemeral_key": {
+         "type_name": "DH",
+         "size": 1024,
+         "curve_name": null
+        }
+       }
+      ]
+     }
+    },
+    "tls_1_2_cipher_suites": {
+     "result": {
+      "accepted_cipher_suites": [
+       {
+        "cipher_suite": {
+         "name": "TLS_DHE_RSA_WITH_AES_256_GCM_SHA384",
+         "is_anonymous": false,
+         "key_size": 256
+        },
+        "ephemeral_key": {
+         "type_name": "DH",
+         "size": 1024,
+         "curve_name": null
+        }
+       },
+       {
+        "cipher_suite": {
+         "name": "TLS_DHE_RSA_WITH_AES_256_CBC_SHA256",
+         "is_anonymous": false,
+         "key_size": 256
+        },
+        "ephemeral_key": {
+         "type_name": "DH",
+         "size": 1024,
+         "curve_name": null
+        }
+       },
+       {
+        "cipher_suite": {
+         "name": "TLS_DHE_RSA_WITH_AES_256_CBC_SHA",
+         "is_anonymous": false,
+         "key_size": 256
+        },
+        "ephemeral_key": {
+         "type_name": "DH",
+         "size": 1024,
+         "curve_name": null
+        }
+       },
+       {
+        "cipher_suite": {
+         "name": "TLS_DHE_RSA_WITH_AES_128_GCM_SHA256",
+         "is_anonymous": false,
+         "key_size": 128
+        },
+        "ephemeral_key": {
+         "type_name": "DH",
+         "size": 1024,
+         "curve_name": null
+        }
+       },
+       {
+        "cipher_suite": {
+         "name": "TLS_DHE_RSA_WITH_AES_128_CBC_SHA256",
+         "is_anonymous": false,
+         "key_size": 128
+        },
+        "ephemeral_key": {
+         "type_name": "DH",
+         "size": 1024,
+         "curve_name": null
+        }
+       },
+       {
+        "cipher_suite": {
+         "name": "TLS_DHE_RSA_WITH_AES_128_CBC_SHA",
+         "is_anonymous": false,
+         "key_size": 128
+        },
+        "ephemeral_key": {
+         "type_name": "DH",
+         "size": 1024,
+         "curve_name": null
+        }
+       }
+      ]
+     }
+    },
+    "tls_1_3_cipher_suites": {
+     "result": {
+      "accepted_cipher_suites": []
+     }
+    },
+    "certificate_info": {
+     "result": {
+      "certificate_deployments": [
+       {
+        "path_validation_results": [
+         {
+          "trust_store": {
+           "name": "Android",
+           "version": "16.0.0_r4"
+          },
+          "was_validation_successful": true,
+          "validation_error": null
+         },
+         {
+          "trust_store": {
+           "name": "Apple",
+           "version": "iOS 26, iPadOS 26, macOS 26, tvOS 26, visionOS 26 and watchOS 26"
+          },
+          "was_validation_successful": true,
+          "validation_error": null
+         },
+         {
+          "trust_store": {
+           "name": "Java",
+           "version": "jdk-13.0.2"
+          },
+          "was_validation_successful": true,
+          "validation_error": null
+         },
+         {
+          "trust_store": {
+           "name": "Mozilla",
+           "version": "2026-03-28"
+          },
+          "was_validation_successful": true,
+          "validation_error": null
+         },
+         {
+          "trust_store": {
+           "name": "Windows",
+           "version": "2026-03-28"
+          },
+          "was_validation_successful": true,
+          "validation_error": null
+         }
+        ],
+        "received_certificate_chain": [
+         {
+          "subject": "CN=*.badssl.com",
+          "not_valid_before": "2026-09-29T20:02:56Z",
+          "not_valid_after": "2026-12-28T20:02:55Z"
+         },
+         {
+          "subject": "CN=YR1,O=Let's Encrypt,C=US",
+          "not_valid_before": "2025-09-03T00:00:00Z",
+          "not_valid_after": "2028-09-02T23:59:59Z"
+         },
+         {
+          "subject": "CN=Root YR,O=ISRG,C=US",
+          "not_valid_before": "2026-05-13T00:00:00Z",
+          "not_valid_after": "2032-09-02T23:59:59Z"
+         }
+        ]
+       }
+      ]
+     }
+    }
+   }
+  },
+  {
+   "server_location": {
+    "hostname": "static-rsa.badssl.com",
+    "port": 443,
+    "ip_address": "104.154.89.105"
+   },
+   "scan_status": "COMPLETED",
+   "connectivity_status": "COMPLETED",
+   "scan_result": {
+    "ssl_3_0_cipher_suites": {
+     "result": {
+      "accepted_cipher_suites": []
+     }
+    },
+    "tls_1_0_cipher_suites": {
+     "result": {
+      "accepted_cipher_suites": []
+     }
+    },
+    "tls_1_1_cipher_suites": {
+     "result": {
+      "accepted_cipher_suites": [
+       {
+        "cipher_suite": {
+         "name": "TLS_RSA_WITH_SEED_CBC_SHA",
+         "is_anonymous": false,
+         "key_size": 128
+        },
+        "ephemeral_key": null
+       },
+       {
+        "cipher_suite": {
+         "name": "TLS_RSA_WITH_RC4_128_SHA",
+         "is_anonymous": false,
+         "key_size": 128
+        },
+        "ephemeral_key": null
+       },
+       {
+        "cipher_suite": {
+         "name": "TLS_RSA_WITH_RC4_128_MD5",
+         "is_anonymous": false,
+         "key_size": 128
+        },
+        "ephemeral_key": null
+       },
+       {
+        "cipher_suite": {
+         "name": "TLS_RSA_WITH_NULL_SHA",
+         "is_anonymous": false,
+         "key_size": 0
+        },
+        "ephemeral_key": null
+       },
+       {
+        "cipher_suite": {
+         "name": "TLS_RSA_WITH_NULL_MD5",
+         "is_anonymous": false,
+         "key_size": 0
+        },
+        "ephemeral_key": null
+       },
+       {
+        "cipher_suite": {
+         "name": "TLS_RSA_WITH_CAMELLIA_256_CBC_SHA",
+         "is_anonymous": false,
+         "key_size": 256
+        },
+        "ephemeral_key": null
+       },
+       {
+        "cipher_suite": {
+         "name": "TLS_RSA_WITH_CAMELLIA_128_CBC_SHA",
+         "is_anonymous": false,
+         "key_size": 128
+        },
+        "ephemeral_key": null
+       },
+       {
+        "cipher_suite": {
+         "name": "TLS_RSA_WITH_AES_256_CBC_SHA",
+         "is_anonymous": false,
+         "key_size": 256
+        },
+        "ephemeral_key": null
+       },
+       {
+        "cipher_suite": {
+         "name": "TLS_RSA_WITH_AES_128_CBC_SHA",
+         "is_anonymous": false,
+         "key_size": 128
+        },
+        "ephemeral_key": null
+       },
+       {
+        "cipher_suite": {
+         "name": "TLS_RSA_WITH_3DES_EDE_CBC_SHA",
+         "is_anonymous": false,
+         "key_size": 168
+        },
+        "ephemeral_key": null
+       }
+      ]
+     }
+    },
+    "tls_1_2_cipher_suites": {
+     "result": {
+      "accepted_cipher_suites": [
+       {
+        "cipher_suite": {
+         "name": "TLS_RSA_WITH_SEED_CBC_SHA",
+         "is_anonymous": false,
+         "key_size": 128
+        },
+        "ephemeral_key": null
+       },
+       {
+        "cipher_suite": {
+         "name": "TLS_RSA_WITH_RC4_128_SHA",
+         "is_anonymous": false,
+         "key_size": 128
+        },
+        "ephemeral_key": null
+       },
+       {
+        "cipher_suite": {
+         "name": "TLS_RSA_WITH_RC4_128_MD5",
+         "is_anonymous": false,
+         "key_size": 128
+        },
+        "ephemeral_key": null
+       },
+       {
+        "cipher_suite": {
+         "name": "TLS_RSA_WITH_NULL_SHA256",
+         "is_anonymous": false,
+         "key_size": 0
+        },
+        "ephemeral_key": null
+       },
+       {
+        "cipher_suite": {
+         "name": "TLS_RSA_WITH_NULL_SHA",
+         "is_anonymous": false,
+         "key_size": 0
+        },
+        "ephemeral_key": null
+       },
+       {
+        "cipher_suite": {
+         "name": "TLS_RSA_WITH_NULL_MD5",
+         "is_anonymous": false,
+         "key_size": 0
+        },
+        "ephemeral_key": null
+       },
+       {
+        "cipher_suite": {
+         "name": "TLS_RSA_WITH_CAMELLIA_256_CBC_SHA",
+         "is_anonymous": false,
+         "key_size": 256
+        },
+        "ephemeral_key": null
+       },
+       {
+        "cipher_suite": {
+         "name": "TLS_RSA_WITH_CAMELLIA_128_CBC_SHA",
+         "is_anonymous": false,
+         "key_size": 128
+        },
+        "ephemeral_key": null
+       },
+       {
+        "cipher_suite": {
+         "name": "TLS_RSA_WITH_AES_256_GCM_SHA384",
+         "is_anonymous": false,
+         "key_size": 256
+        },
+        "ephemeral_key": null
+       },
+       {
+        "cipher_suite": {
+         "name": "TLS_RSA_WITH_AES_256_CBC_SHA256",
+         "is_anonymous": false,
+         "key_size": 256
+        },
+        "ephemeral_key": null
+       },
+       {
+        "cipher_suite": {
+         "name": "TLS_RSA_WITH_AES_256_CBC_SHA",
+         "is_anonymous": false,
+         "key_size": 256
+        },
+        "ephemeral_key": null
+       },
+       {
+        "cipher_suite": {
+         "name": "TLS_RSA_WITH_AES_128_GCM_SHA256",
+         "is_anonymous": false,
+         "key_size": 128
+        },
+        "ephemeral_key": null
+       },
+       {
+        "cipher_suite": {
+         "name": "TLS_RSA_WITH_AES_128_CBC_SHA256",
+         "is_anonymous": false,
+         "key_size": 128
+        },
+        "ephemeral_key": null
+       },
+       {
+        "cipher_suite": {
+         "name": "TLS_RSA_WITH_AES_128_CBC_SHA",
+         "is_anonymous": false,
+         "key_size": 128
+        },
+        "ephemeral_key": null
+       },
+       {
+        "cipher_suite": {
+         "name": "TLS_RSA_WITH_3DES_EDE_CBC_SHA",
+         "is_anonymous": false,
+         "key_size": 168
+        },
+        "ephemeral_key": null
+       }
+      ]
+     }
+    },
+    "tls_1_3_cipher_suites": {
+     "result": {
+      "accepted_cipher_suites": []
+     }
+    },
+    "certificate_info": {
+     "result": {
+      "certificate_deployments": [
+       {
+        "path_validation_results": [
+         {
+          "trust_store": {
+           "name": "Android",
+           "version": "16.0.0_r4"
+          },
+          "was_validation_successful": true,
+          "validation_error": null
+         },
+         {
+          "trust_store": {
+           "name": "Apple",
+           "version": "iOS 26, iPadOS 26, macOS 26, tvOS 26, visionOS 26 and watchOS 26"
+          },
+          "was_validation_successful": true,
+          "validation_error": null
+         },
+         {
+          "trust_store": {
+           "name": "Java",
+           "version": "jdk-13.0.2"
+          },
+          "was_validation_successful": true,
+          "validation_error": null
+         },
+         {
+          "trust_store": {
+           "name": "Mozilla",
+           "version": "2026-03-28"
+          },
+          "was_validation_successful": true,
+          "validation_error": null
+         },
+         {
+          "trust_store": {
+           "name": "Windows",
+           "version": "2026-03-28"
+          },
+          "was_validation_successful": true,
+          "validation_error": null
+         }
+        ],
+        "received_certificate_chain": [
+         {
+          "subject": "CN=*.badssl.com",
+          "not_valid_before": "2026-09-29T20:02:56Z",
+          "not_valid_after": "2026-12-28T20:02:55Z"
+         },
+         {
+          "subject": "CN=YR1,O=Let's Encrypt,C=US",
+          "not_valid_before": "2025-09-03T00:00:00Z",
+          "not_valid_after": "2028-09-02T23:59:59Z"
+         },
+         {
+          "subject": "CN=Root YR,O=ISRG,C=US",
+          "not_valid_before": "2026-05-13T00:00:00Z",
+          "not_valid_after": "2032-09-02T23:59:59Z"
+         }
+        ]
+       }
+      ]
+     }
+    }
+   }
+  },
+  {
+   "server_location": {
+    "hostname": "wrong.host.badssl.com",
+    "port": 443,
+    "ip_address": "104.154.89.105"
+   },
+   "scan_status": "COMPLETED",
+   "connectivity_status": "COMPLETED",
+   "scan_result": {
+    "ssl_3_0_cipher_suites": {
+     "result": {
+      "accepted_cipher_suites": []
+     }
+    },
+    "tls_1_0_cipher_suites": {
+     "result": {
+      "accepted_cipher_suites": []
+     }
+    },
+    "tls_1_1_cipher_suites": {
+     "result": {
+      "accepted_cipher_suites": [
+       {
+        "cipher_suite": {
+         "name": "TLS_RSA_WITH_CAMELLIA_256_CBC_SHA",
+         "is_anonymous": false,
+         "key_size": 256
+        },
+        "ephemeral_key": null
+       },
+       {
+        "cipher_suite": {
+         "name": "TLS_RSA_WITH_CAMELLIA_128_CBC_SHA",
+         "is_anonymous": false,
+         "key_size": 128
+        },
+        "ephemeral_key": null
+       },
+       {
+        "cipher_suite": {
+         "name": "TLS_RSA_WITH_AES_256_CBC_SHA",
+         "is_anonymous": false,
+         "key_size": 256
+        },
+        "ephemeral_key": null
+       },
+       {
+        "cipher_suite": {
+         "name": "TLS_RSA_WITH_AES_128_CBC_SHA",
+         "is_anonymous": false,
+         "key_size": 128
+        },
+        "ephemeral_key": null
+       },
+       {
+        "cipher_suite": {
+         "name": "TLS_RSA_WITH_3DES_EDE_CBC_SHA",
+         "is_anonymous": false,
+         "key_size": 168
+        },
+        "ephemeral_key": null
+       },
+       {
+        "cipher_suite": {
+         "name": "TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA",
+         "is_anonymous": false,
+         "key_size": 256
+        },
+        "ephemeral_key": {
+         "type_name": "ECDH",
+         "size": 256,
+         "curve_name": "secp256r1"
+        }
+       },
+       {
+        "cipher_suite": {
+         "name": "TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA",
+         "is_anonymous": false,
+         "key_size": 128
+        },
+        "ephemeral_key": {
+         "type_name": "ECDH",
+         "size": 256,
+         "curve_name": "secp256r1"
+        }
+       },
+       {
+        "cipher_suite": {
+         "name": "TLS_ECDHE_RSA_WITH_3DES_EDE_CBC_SHA",
+         "is_anonymous": false,
+         "key_size": 168
+        },
+        "ephemeral_key": {
+         "type_name": "ECDH",
+         "size": 256,
+         "curve_name": "secp256r1"
+        }
+       },
+       {
+        "cipher_suite": {
+         "name": "TLS_DHE_RSA_WITH_CAMELLIA_256_CBC_SHA",
+         "is_anonymous": false,
+         "key_size": 256
+        },
+        "ephemeral_key": {
+         "type_name": "DH",
+         "size": 2048,
+         "curve_name": null
+        }
+       },
+       {
+        "cipher_suite": {
+         "name": "TLS_DHE_RSA_WITH_CAMELLIA_128_CBC_SHA",
+         "is_anonymous": false,
+         "key_size": 128
+        },
+        "ephemeral_key": {
+         "type_name": "DH",
+         "size": 2048,
+         "curve_name": null
+        }
+       },
+       {
+        "cipher_suite": {
+         "name": "TLS_DHE_RSA_WITH_AES_256_CBC_SHA",
+         "is_anonymous": false,
+         "key_size": 256
+        },
+        "ephemeral_key": {
+         "type_name": "DH",
+         "size": 2048,
+         "curve_name": null
+        }
+       },
+       {
+        "cipher_suite": {
+         "name": "TLS_DHE_RSA_WITH_AES_128_CBC_SHA",
+         "is_anonymous": false,
+         "key_size": 128
+        },
+        "ephemeral_key": {
+         "type_name": "DH",
+         "size": 2048,
+         "curve_name": null
+        }
+       }
+      ]
+     }
+    },
+    "tls_1_2_cipher_suites": {
+     "result": {
+      "accepted_cipher_suites": [
+       {
+        "cipher_suite": {
+         "name": "TLS_RSA_WITH_CAMELLIA_256_CBC_SHA",
+         "is_anonymous": false,
+         "key_size": 256
+        },
+        "ephemeral_key": null
+       },
+       {
+        "cipher_suite": {
+         "name": "TLS_RSA_WITH_CAMELLIA_128_CBC_SHA",
+         "is_anonymous": false,
+         "key_size": 128
+        },
+        "ephemeral_key": null
+       },
+       {
+        "cipher_suite": {
+         "name": "TLS_RSA_WITH_AES_256_GCM_SHA384",
+         "is_anonymous": false,
+         "key_size": 256
+        },
+        "ephemeral_key": null
+       },
+       {
+        "cipher_suite": {
+         "name": "TLS_RSA_WITH_AES_256_CBC_SHA256",
+         "is_anonymous": false,
+         "key_size": 256
+        },
+        "ephemeral_key": null
+       },
+       {
+        "cipher_suite": {
+         "name": "TLS_RSA_WITH_AES_256_CBC_SHA",
+         "is_anonymous": false,
+         "key_size": 256
+        },
+        "ephemeral_key": null
+       },
+       {
+        "cipher_suite": {
+         "name": "TLS_RSA_WITH_AES_128_GCM_SHA256",
+         "is_anonymous": false,
+         "key_size": 128
+        },
+        "ephemeral_key": null
+       },
+       {
+        "cipher_suite": {
+         "name": "TLS_RSA_WITH_AES_128_CBC_SHA256",
+         "is_anonymous": false,
+         "key_size": 128
+        },
+        "ephemeral_key": null
+       },
+       {
+        "cipher_suite": {
+         "name": "TLS_RSA_WITH_AES_128_CBC_SHA",
+         "is_anonymous": false,
+         "key_size": 128
+        },
+        "ephemeral_key": null
+       },
+       {
+        "cipher_suite": {
+         "name": "TLS_RSA_WITH_3DES_EDE_CBC_SHA",
+         "is_anonymous": false,
+         "key_size": 168
+        },
+        "ephemeral_key": null
+       },
+       {
+        "cipher_suite": {
+         "name": "TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384",
+         "is_anonymous": false,
+         "key_size": 256
+        },
+        "ephemeral_key": {
+         "type_name": "ECDH",
+         "size": 256,
+         "curve_name": "secp256r1"
+        }
+       },
+       {
+        "cipher_suite": {
+         "name": "TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384",
+         "is_anonymous": false,
+         "key_size": 256
+        },
+        "ephemeral_key": {
+         "type_name": "ECDH",
+         "size": 256,
+         "curve_name": "secp256r1"
+        }
+       },
+       {
+        "cipher_suite": {
+         "name": "TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA",
+         "is_anonymous": false,
+         "key_size": 256
+        },
+        "ephemeral_key": {
+         "type_name": "ECDH",
+         "size": 256,
+         "curve_name": "secp256r1"
+        }
+       },
+       {
+        "cipher_suite": {
+         "name": "TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256",
+         "is_anonymous": false,
+         "key_size": 128
+        },
+        "ephemeral_key": {
+         "type_name": "ECDH",
+         "size": 256,
+         "curve_name": "secp256r1"
+        }
+       },
+       {
+        "cipher_suite": {
+         "name": "TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256",
+         "is_anonymous": false,
+         "key_size": 128
+        },
+        "ephemeral_key": {
+         "type_name": "ECDH",
+         "size": 256,
+         "curve_name": "secp256r1"
+        }
+       },
+       {
+        "cipher_suite": {
+         "name": "TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA",
+         "is_anonymous": false,
+         "key_size": 128
+        },
+        "ephemeral_key": {
+         "type_name": "ECDH",
+         "size": 256,
+         "curve_name": "secp256r1"
+        }
+       },
+       {
+        "cipher_suite": {
+         "name": "TLS_ECDHE_RSA_WITH_3DES_EDE_CBC_SHA",
+         "is_anonymous": false,
+         "key_size": 168
+        },
+        "ephemeral_key": {
+         "type_name": "ECDH",
+         "size": 256,
+         "curve_name": "secp256r1"
+        }
+       },
+       {
+        "cipher_suite": {
+         "name": "TLS_DHE_RSA_WITH_CAMELLIA_256_CBC_SHA",
+         "is_anonymous": false,
+         "key_size": 256
+        },
+        "ephemeral_key": {
+         "type_name": "DH",
+         "size": 2048,
+         "curve_name": null
+        }
+       },
+       {
+        "cipher_suite": {
+         "name": "TLS_DHE_RSA_WITH_CAMELLIA_128_CBC_SHA",
+         "is_anonymous": false,
+         "key_size": 128
+        },
+        "ephemeral_key": {
+         "type_name": "DH",
+         "size": 2048,
+         "curve_name": null
+        }
+       },
+       {
+        "cipher_suite": {
+         "name": "TLS_DHE_RSA_WITH_AES_256_GCM_SHA384",
+         "is_anonymous": false,
+         "key_size": 256
+        },
+        "ephemeral_key": {
+         "type_name": "DH",
+         "size": 2048,
+         "curve_name": null
+        }
+       },
+       {
+        "cipher_suite": {
+         "name": "TLS_DHE_RSA_WITH_AES_256_CBC_SHA256",
+         "is_anonymous": false,
+         "key_size": 256
+        },
+        "ephemeral_key": {
+         "type_name": "DH",
+         "size": 2048,
+         "curve_name": null
+        }
+       },
+       {
+        "cipher_suite": {
+         "name": "TLS_DHE_RSA_WITH_AES_256_CBC_SHA",
+         "is_anonymous": false,
+         "key_size": 256
+        },
+        "ephemeral_key": {
+         "type_name": "DH",
+         "size": 2048,
+         "curve_name": null
+        }
+       },
+       {
+        "cipher_suite": {
+         "name": "TLS_DHE_RSA_WITH_AES_128_GCM_SHA256",
+         "is_anonymous": false,
+         "key_size": 128
+        },
+        "ephemeral_key": {
+         "type_name": "DH",
+         "size": 2048,
+         "curve_name": null
+        }
+       },
+       {
+        "cipher_suite": {
+         "name": "TLS_DHE_RSA_WITH_AES_128_CBC_SHA256",
+         "is_anonymous": false,
+         "key_size": 128
+        },
+        "ephemeral_key": {
+         "type_name": "DH",
+         "size": 2048,
+         "curve_name": null
+        }
+       },
+       {
+        "cipher_suite": {
+         "name": "TLS_DHE_RSA_WITH_AES_128_CBC_SHA",
+         "is_anonymous": false,
+         "key_size": 128
+        },
+        "ephemeral_key": {
+         "type_name": "DH",
+         "size": 2048,
+         "curve_name": null
+        }
+       }
+      ]
+     }
+    },
+    "tls_1_3_cipher_suites": {
+     "result": {
+      "accepted_cipher_suites": []
+     }
+    },
+    "certificate_info": {
+     "result": {
+      "certificate_deployments": [
+       {
+        "path_validation_results": [
+         {
+          "trust_store": {
+           "name": "Android",
+           "version": "16.0.0_r4"
+          },
+          "was_validation_successful": false,
+          "validation_error": "validation failed: leaf certificate has no matching subjectAltName (encountered processing <Certificate(subject=<Name(CN=*.badssl.com)>, ...)>)"
+         },
+         {
+          "trust_store": {
+           "name": "Apple",
+           "version": "iOS 26, iPadOS 26, macOS 26, tvOS 26, visionOS 26 and watchOS 26"
+          },
+          "was_validation_successful": false,
+          "validation_error": "validation failed: leaf certificate has no matching subjectAltName (encountered processing <Certificate(subject=<Name(CN=*.badssl.com)>, ...)>)"
+         },
+         {
+          "trust_store": {
+           "name": "Java",
+           "version": "jdk-13.0.2"
+          },
+          "was_validation_successful": false,
+          "validation_error": "validation failed: leaf certificate has no matching subjectAltName (encountered processing <Certificate(subject=<Name(CN=*.badssl.com)>, ...)>)"
+         },
+         {
+          "trust_store": {
+           "name": "Mozilla",
+           "version": "2026-03-28"
+          },
+          "was_validation_successful": false,
+          "validation_error": "validation failed: leaf certificate has no matching subjectAltName (encountered processing <Certificate(subject=<Name(CN=*.badssl.com)>, ...)>)"
+         },
+         {
+          "trust_store": {
+           "name": "Windows",
+           "version": "2026-03-28"
+          },
+          "was_validation_successful": false,
+          "validation_error": "validation failed: leaf certificate has no matching subjectAltName (encountered processing <Certificate(subject=<Name(CN=*.badssl.com)>, ...)>)"
+         }
+        ],
+        "received_certificate_chain": [
+         {
+          "subject": "CN=*.badssl.com",
+          "not_valid_before": "2026-09-29T20:02:56Z",
+          "not_valid_after": "2026-12-28T20:02:55Z"
+         },
+         {
+          "subject": "CN=YR1,O=Let's Encrypt,C=US",
+          "not_valid_before": "2025-09-03T00:00:00Z",
+          "not_valid_after": "2028-09-02T23:59:59Z"
+         },
+         {
+          "subject": "CN=Root YR,O=ISRG,C=US",
+          "not_valid_before": "2026-05-13T00:00:00Z",
+          "not_valid_after": "2032-09-02T23:59:59Z"
+         }
+        ]
+       }
+      ]
+     }
+    }
+   }
+  },
+  {
+   "server_location": {
+    "hostname": "expired.badssl.com",
+    "port": 443,
+    "ip_address": "104.154.89.105"
+   },
+   "scan_status": "COMPLETED",
+   "connectivity_status": "COMPLETED",
+   "scan_result": {
+    "ssl_3_0_cipher_suites": {
+     "result": {
+      "accepted_cipher_suites": []
+     }
+    },
+    "tls_1_0_cipher_suites": {
+     "result": {
+      "accepted_cipher_suites": []
+     }
+    },
+    "tls_1_1_cipher_suites": {
+     "result": {
+      "accepted_cipher_suites": [
+       {
+        "cipher_suite": {
+         "name": "TLS_RSA_WITH_CAMELLIA_256_CBC_SHA",
+         "is_anonymous": false,
+         "key_size": 256
+        },
+        "ephemeral_key": null
+       },
+       {
+        "cipher_suite": {
+         "name": "TLS_RSA_WITH_CAMELLIA_128_CBC_SHA",
+         "is_anonymous": false,
+         "key_size": 128
+        },
+        "ephemeral_key": null
+       },
+       {
+        "cipher_suite": {
+         "name": "TLS_RSA_WITH_AES_256_CBC_SHA",
+         "is_anonymous": false,
+         "key_size": 256
+        },
+        "ephemeral_key": null
+       },
+       {
+        "cipher_suite": {
+         "name": "TLS_RSA_WITH_AES_128_CBC_SHA",
+         "is_anonymous": false,
+         "key_size": 128
+        },
+        "ephemeral_key": null
+       },
+       {
+        "cipher_suite": {
+         "name": "TLS_RSA_WITH_3DES_EDE_CBC_SHA",
+         "is_anonymous": false,
+         "key_size": 168
+        },
+        "ephemeral_key": null
+       },
+       {
+        "cipher_suite": {
+         "name": "TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA",
+         "is_anonymous": false,
+         "key_size": 256
+        },
+        "ephemeral_key": {
+         "type_name": "ECDH",
+         "size": 256,
+         "curve_name": "secp256r1"
+        }
+       },
+       {
+        "cipher_suite": {
+         "name": "TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA",
+         "is_anonymous": false,
+         "key_size": 128
+        },
+        "ephemeral_key": {
+         "type_name": "ECDH",
+         "size": 256,
+         "curve_name": "secp256r1"
+        }
+       },
+       {
+        "cipher_suite": {
+         "name": "TLS_ECDHE_RSA_WITH_3DES_EDE_CBC_SHA",
+         "is_anonymous": false,
+         "key_size": 168
+        },
+        "ephemeral_key": {
+         "type_name": "ECDH",
+         "size": 256,
+         "curve_name": "secp256r1"
+        }
+       },
+       {
+        "cipher_suite": {
+         "name": "TLS_DHE_RSA_WITH_CAMELLIA_256_CBC_SHA",
+         "is_anonymous": false,
+         "key_size": 256
+        },
+        "ephemeral_key": {
+         "type_name": "DH",
+         "size": 2048,
+         "curve_name": null
+        }
+       },
+       {
+        "cipher_suite": {
+         "name": "TLS_DHE_RSA_WITH_CAMELLIA_128_CBC_SHA",
+         "is_anonymous": false,
+         "key_size": 128
+        },
+        "ephemeral_key": {
+         "type_name": "DH",
+         "size": 2048,
+         "curve_name": null
+        }
+       },
+       {
+        "cipher_suite": {
+         "name": "TLS_DHE_RSA_WITH_AES_256_CBC_SHA",
+         "is_anonymous": false,
+         "key_size": 256
+        },
+        "ephemeral_key": {
+         "type_name": "DH",
+         "size": 2048,
+         "curve_name": null
+        }
+       },
+       {
+        "cipher_suite": {
+         "name": "TLS_DHE_RSA_WITH_AES_128_CBC_SHA",
+         "is_anonymous": false,
+         "key_size": 128
+        },
+        "ephemeral_key": {
+         "type_name": "DH",
+         "size": 2048,
+         "curve_name": null
+        }
+       }
+      ]
+     }
+    },
+    "tls_1_2_cipher_suites": {
+     "result": {
+      "accepted_cipher_suites": [
+       {
+        "cipher_suite": {
+         "name": "TLS_RSA_WITH_CAMELLIA_256_CBC_SHA",
+         "is_anonymous": false,
+         "key_size": 256
+        },
+        "ephemeral_key": null
+       },
+       {
+        "cipher_suite": {
+         "name": "TLS_RSA_WITH_CAMELLIA_128_CBC_SHA",
+         "is_anonymous": false,
+         "key_size": 128
+        },
+        "ephemeral_key": null
+       },
+       {
+        "cipher_suite": {
+         "name": "TLS_RSA_WITH_AES_256_GCM_SHA384",
+         "is_anonymous": false,
+         "key_size": 256
+        },
+        "ephemeral_key": null
+       },
+       {
+        "cipher_suite": {
+         "name": "TLS_RSA_WITH_AES_256_CBC_SHA256",
+         "is_anonymous": false,
+         "key_size": 256
+        },
+        "ephemeral_key": null
+       },
+       {
+        "cipher_suite": {
+         "name": "TLS_RSA_WITH_AES_256_CBC_SHA",
+         "is_anonymous": false,
+         "key_size": 256
+        },
+        "ephemeral_key": null
+       },
+       {
+        "cipher_suite": {
+         "name": "TLS_RSA_WITH_AES_128_GCM_SHA256",
+         "is_anonymous": false,
+         "key_size": 128
+        },
+        "ephemeral_key": null
+       },
+       {
+        "cipher_suite": {
+         "name": "TLS_RSA_WITH_AES_128_CBC_SHA256",
+         "is_anonymous": false,
+         "key_size": 128
+        },
+        "ephemeral_key": null
+       },
+       {
+        "cipher_suite": {
+         "name": "TLS_RSA_WITH_AES_128_CBC_SHA",
+         "is_anonymous": false,
+         "key_size": 128
+        },
+        "ephemeral_key": null
+       },
+       {
+        "cipher_suite": {
+         "name": "TLS_RSA_WITH_3DES_EDE_CBC_SHA",
+         "is_anonymous": false,
+         "key_size": 168
+        },
+        "ephemeral_key": null
+       },
+       {
+        "cipher_suite": {
+         "name": "TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384",
+         "is_anonymous": false,
+         "key_size": 256
+        },
+        "ephemeral_key": {
+         "type_name": "ECDH",
+         "size": 256,
+         "curve_name": "secp256r1"
+        }
+       },
+       {
+        "cipher_suite": {
+         "name": "TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384",
+         "is_anonymous": false,
+         "key_size": 256
+        },
+        "ephemeral_key": {
+         "type_name": "ECDH",
+         "size": 256,
+         "curve_name": "secp256r1"
+        }
+       },
+       {
+        "cipher_suite": {
+         "name": "TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA",
+         "is_anonymous": false,
+         "key_size": 256
+        },
+        "ephemeral_key": {
+         "type_name": "ECDH",
+         "size": 256,
+         "curve_name": "secp256r1"
+        }
+       },
+       {
+        "cipher_suite": {
+         "name": "TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256",
+         "is_anonymous": false,
+         "key_size": 128
+        },
+        "ephemeral_key": {
+         "type_name": "ECDH",
+         "size": 256,
+         "curve_name": "secp256r1"
+        }
+       },
+       {
+        "cipher_suite": {
+         "name": "TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256",
+         "is_anonymous": false,
+         "key_size": 128
+        },
+        "ephemeral_key": {
+         "type_name": "ECDH",
+         "size": 256,
+         "curve_name": "secp256r1"
+        }
+       },
+       {
+        "cipher_suite": {
+         "name": "TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA",
+         "is_anonymous": false,
+         "key_size": 128
+        },
+        "ephemeral_key": {
+         "type_name": "ECDH",
+         "size": 256,
+         "curve_name": "secp256r1"
+        }
+       },
+       {
+        "cipher_suite": {
+         "name": "TLS_ECDHE_RSA_WITH_3DES_EDE_CBC_SHA",
+         "is_anonymous": false,
+         "key_size": 168
+        },
+        "ephemeral_key": {
+         "type_name": "ECDH",
+         "size": 256,
+         "curve_name": "secp256r1"
+        }
+       },
+       {
+        "cipher_suite": {
+         "name": "TLS_DHE_RSA_WITH_CAMELLIA_256_CBC_SHA",
+         "is_anonymous": false,
+         "key_size": 256
+        },
+        "ephemeral_key": {
+         "type_name": "DH",
+         "size": 2048,
+         "curve_name": null
+        }
+       },
+       {
+        "cipher_suite": {
+         "name": "TLS_DHE_RSA_WITH_CAMELLIA_128_CBC_SHA",
+         "is_anonymous": false,
+         "key_size": 128
+        },
+        "ephemeral_key": {
+         "type_name": "DH",
+         "size": 2048,
+         "curve_name": null
+        }
+       },
+       {
+        "cipher_suite": {
+         "name": "TLS_DHE_RSA_WITH_AES_256_GCM_SHA384",
+         "is_anonymous": false,
+         "key_size": 256
+        },
+        "ephemeral_key": {
+         "type_name": "DH",
+         "size": 2048,
+         "curve_name": null
+        }
+       },
+       {
+        "cipher_suite": {
+         "name": "TLS_DHE_RSA_WITH_AES_256_CBC_SHA256",
+         "is_anonymous": false,
+         "key_size": 256
+        },
+        "ephemeral_key": {
+         "type_name": "DH",
+         "size": 2048,
+         "curve_name": null
+        }
+       },
+       {
+        "cipher_suite": {
+         "name": "TLS_DHE_RSA_WITH_AES_256_CBC_SHA",
+         "is_anonymous": false,
+         "key_size": 256
+        },
+        "ephemeral_key": {
+         "type_name": "DH",
+         "size": 2048,
+         "curve_name": null
+        }
+       },
+       {
+        "cipher_suite": {
+         "name": "TLS_DHE_RSA_WITH_AES_128_GCM_SHA256",
+         "is_anonymous": false,
+         "key_size": 128
+        },
+        "ephemeral_key": {
+         "type_name": "DH",
+         "size": 2048,
+         "curve_name": null
+        }
+       },
+       {
+        "cipher_suite": {
+         "name": "TLS_DHE_RSA_WITH_AES_128_CBC_SHA256",
+         "is_anonymous": false,
+         "key_size": 128
+        },
+        "ephemeral_key": {
+         "type_name": "DH",
+         "size": 2048,
+         "curve_name": null
+        }
+       },
+       {
+        "cipher_suite": {
+         "name": "TLS_DHE_RSA_WITH_AES_128_CBC_SHA",
+         "is_anonymous": false,
+         "key_size": 128
+        },
+        "ephemeral_key": {
+         "type_name": "DH",
+         "size": 2048,
+         "curve_name": null
+        }
+       }
+      ]
+     }
+    },
+    "tls_1_3_cipher_suites": {
+     "result": {
+      "accepted_cipher_suites": []
+     }
+    },
+    "certificate_info": {
+     "result": {
+      "certificate_deployments": [
+       {
+        "path_validation_results": [
+         {
+          "trust_store": {
+           "name": "Android",
+           "version": "16.0.0_r4"
+          },
+          "was_validation_successful": false,
+          "validation_error": "validation failed: cert is not valid at validation time (encountered processing <Certificate(subject=<Name(OU=Domain Control Validated,OU=PositiveSSL Wildcard,CN=*.badssl.com)>, ...)>)"
+         },
+         {
+          "trust_store": {
+           "name": "Apple",
+           "version": "iOS 26, iPadOS 26, macOS 26, tvOS 26, visionOS 26 and watchOS 26"
+          },
+          "was_validation_successful": false,
+          "validation_error": "validation failed: cert is not valid at validation time (encountered processing <Certificate(subject=<Name(OU=Domain Control Validated,OU=PositiveSSL Wildcard,CN=*.badssl.com)>, ...)>)"
+         },
+         {
+          "trust_store": {
+           "name": "Java",
+           "version": "jdk-13.0.2"
+          },
+          "was_validation_successful": false,
+          "validation_error": "validation failed: cert is not valid at validation time (encountered processing <Certificate(subject=<Name(OU=Domain Control Validated,OU=PositiveSSL Wildcard,CN=*.badssl.com)>, ...)>)"
+         },
+         {
+          "trust_store": {
+           "name": "Mozilla",
+           "version": "2026-03-28"
+          },
+          "was_validation_successful": false,
+          "validation_error": "validation failed: cert is not valid at validation time (encountered processing <Certificate(subject=<Name(OU=Domain Control Validated,OU=PositiveSSL Wildcard,CN=*.badssl.com)>, ...)>)"
+         },
+         {
+          "trust_store": {
+           "name": "Windows",
+           "version": "2026-03-28"
+          },
+          "was_validation_successful": false,
+          "validation_error": "validation failed: cert is not valid at validation time (encountered processing <Certificate(subject=<Name(OU=Domain Control Validated,OU=PositiveSSL Wildcard,CN=*.badssl.com)>, ...)>)"
+         }
+        ],
+        "received_certificate_chain": [
+         {
+          "subject": "CN=*.badssl.com,OU=PositiveSSL Wildcard,OU=Domain Control Validated",
+          "not_valid_before": "2015-04-09T00:00:00Z",
+          "not_valid_after": "2015-04-12T23:59:59Z"
+         },
+         {
+          "subject": "CN=COMODO RSA Domain Validation Secure Server CA,O=COMODO CA Limited,L=Salford,ST=Greater Manchester,C=GB",
+          "not_valid_before": "2014-02-12T00:00:00Z",
+          "not_valid_after": "2029-02-11T23:59:59Z"
+         },
+         {
+          "subject": "CN=COMODO RSA Certification Authority,O=COMODO CA Limited,L=Salford,ST=Greater Manchester,C=GB",
+          "not_valid_before": "2000-05-30T10:48:38Z",
+          "not_valid_after": "2020-05-30T10:48:38Z"
+         }
+        ]
+       }
+      ]
+     }
+    }
+   }
+  },
+  {
+   "server_location": {
+    "hostname": "self-signed.badssl.com",
+    "port": 443,
+    "ip_address": "104.154.89.105"
+   },
+   "scan_status": "COMPLETED",
+   "connectivity_status": "COMPLETED",
+   "scan_result": {
+    "ssl_3_0_cipher_suites": {
+     "result": {
+      "accepted_cipher_suites": []
+     }
+    },
+    "tls_1_0_cipher_suites": {
+     "result": {
+      "accepted_cipher_suites": []
+     }
+    },
+    "tls_1_1_cipher_suites": {
+     "result": {
+      "accepted_cipher_suites": [
+       {
+        "cipher_suite": {
+         "name": "TLS_RSA_WITH_CAMELLIA_256_CBC_SHA",
+         "is_anonymous": false,
+         "key_size": 256
+        },
+        "ephemeral_key": null
+       },
+       {
+        "cipher_suite": {
+         "name": "TLS_RSA_WITH_CAMELLIA_128_CBC_SHA",
+         "is_anonymous": false,
+         "key_size": 128
+        },
+        "ephemeral_key": null
+       },
+       {
+        "cipher_suite": {
+         "name": "TLS_RSA_WITH_AES_256_CBC_SHA",
+         "is_anonymous": false,
+         "key_size": 256
+        },
+        "ephemeral_key": null
+       },
+       {
+        "cipher_suite": {
+         "name": "TLS_RSA_WITH_AES_128_CBC_SHA",
+         "is_anonymous": false,
+         "key_size": 128
+        },
+        "ephemeral_key": null
+       },
+       {
+        "cipher_suite": {
+         "name": "TLS_RSA_WITH_3DES_EDE_CBC_SHA",
+         "is_anonymous": false,
+         "key_size": 168
+        },
+        "ephemeral_key": null
+       },
+       {
+        "cipher_suite": {
+         "name": "TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA",
+         "is_anonymous": false,
+         "key_size": 256
+        },
+        "ephemeral_key": {
+         "type_name": "ECDH",
+         "size": 256,
+         "curve_name": "secp256r1"
+        }
+       },
+       {
+        "cipher_suite": {
+         "name": "TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA",
+         "is_anonymous": false,
+         "key_size": 128
+        },
+        "ephemeral_key": {
+         "type_name": "ECDH",
+         "size": 256,
+         "curve_name": "secp256r1"
+        }
+       },
+       {
+        "cipher_suite": {
+         "name": "TLS_ECDHE_RSA_WITH_3DES_EDE_CBC_SHA",
+         "is_anonymous": false,
+         "key_size": 168
+        },
+        "ephemeral_key": {
+         "type_name": "ECDH",
+         "size": 256,
+         "curve_name": "secp256r1"
+        }
+       },
+       {
+        "cipher_suite": {
+         "name": "TLS_DHE_RSA_WITH_CAMELLIA_256_CBC_SHA",
+         "is_anonymous": false,
+         "key_size": 256
+        },
+        "ephemeral_key": {
+         "type_name": "DH",
+         "size": 2048,
+         "curve_name": null
+        }
+       },
+       {
+        "cipher_suite": {
+         "name": "TLS_DHE_RSA_WITH_CAMELLIA_128_CBC_SHA",
+         "is_anonymous": false,
+         "key_size": 128
+        },
+        "ephemeral_key": {
+         "type_name": "DH",
+         "size": 2048,
+         "curve_name": null
+        }
+       },
+       {
+        "cipher_suite": {
+         "name": "TLS_DHE_RSA_WITH_AES_256_CBC_SHA",
+         "is_anonymous": false,
+         "key_size": 256
+        },
+        "ephemeral_key": {
+         "type_name": "DH",
+         "size": 2048,
+         "curve_name": null
+        }
+       },
+       {
+        "cipher_suite": {
+         "name": "TLS_DHE_RSA_WITH_AES_128_CBC_SHA",
+         "is_anonymous": false,
+         "key_size": 128
+        },
+        "ephemeral_key": {
+         "type_name": "DH",
+         "size": 2048,
+         "curve_name": null
+        }
+       }
+      ]
+     }
+    },
+    "tls_1_2_cipher_suites": {
+     "result": {
+      "accepted_cipher_suites": [
+       {
+        "cipher_suite": {
+         "name": "TLS_RSA_WITH_CAMELLIA_256_CBC_SHA",
+         "is_anonymous": false,
+         "key_size": 256
+        },
+        "ephemeral_key": null
+       },
+       {
+        "cipher_suite": {
+         "name": "TLS_RSA_WITH_CAMELLIA_128_CBC_SHA",
+         "is_anonymous": false,
+         "key_size": 128
+        },
+        "ephemeral_key": null
+       },
+       {
+        "cipher_suite": {
+         "name": "TLS_RSA_WITH_AES_256_GCM_SHA384",
+         "is_anonymous": false,
+         "key_size": 256
+        },
+        "ephemeral_key": null
+       },
+       {
+        "cipher_suite": {
+         "name": "TLS_RSA_WITH_AES_256_CBC_SHA256",
+         "is_anonymous": false,
+         "key_size": 256
+        },
+        "ephemeral_key": null
+       },
+       {
+        "cipher_suite": {
+         "name": "TLS_RSA_WITH_AES_256_CBC_SHA",
+         "is_anonymous": false,
+         "key_size": 256
+        },
+        "ephemeral_key": null
+       },
+       {
+        "cipher_suite": {
+         "name": "TLS_RSA_WITH_AES_128_GCM_SHA256",
+         "is_anonymous": false,
+         "key_size": 128
+        },
+        "ephemeral_key": null
+       },
+       {
+        "cipher_suite": {
+         "name": "TLS_RSA_WITH_AES_128_CBC_SHA256",
+         "is_anonymous": false,
+         "key_size": 128
+        },
+        "ephemeral_key": null
+       },
+       {
+        "cipher_suite": {
+         "name": "TLS_RSA_WITH_AES_128_CBC_SHA",
+         "is_anonymous": false,
+         "key_size": 128
+        },
+        "ephemeral_key": null
+       },
+       {
+        "cipher_suite": {
+         "name": "TLS_RSA_WITH_3DES_EDE_CBC_SHA",
+         "is_anonymous": false,
+         "key_size": 168
+        },
+        "ephemeral_key": null
+       },
+       {
+        "cipher_suite": {
+         "name": "TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384",
+         "is_anonymous": false,
+         "key_size": 256
+        },
+        "ephemeral_key": {
+         "type_name": "ECDH",
+         "size": 256,
+         "curve_name": "secp256r1"
+        }
+       },
+       {
+        "cipher_suite": {
+         "name": "TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384",
+         "is_anonymous": false,
+         "key_size": 256
+        },
+        "ephemeral_key": {
+         "type_name": "ECDH",
+         "size": 256,
+         "curve_name": "secp256r1"
+        }
+       },
+       {
+        "cipher_suite": {
+         "name": "TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA",
+         "is_anonymous": false,
+         "key_size": 256
+        },
+        "ephemeral_key": {
+         "type_name": "ECDH",
+         "size": 256,
+         "curve_name": "secp256r1"
+        }
+       },
+       {
+        "cipher_suite": {
+         "name": "TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256",
+         "is_anonymous": false,
+         "key_size": 128
+        },
+        "ephemeral_key": {
+         "type_name": "ECDH",
+         "size": 256,
+         "curve_name": "secp256r1"
+        }
+       },
+       {
+        "cipher_suite": {
+         "name": "TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256",
+         "is_anonymous": false,
+         "key_size": 128
+        },
+        "ephemeral_key": {
+         "type_name": "ECDH",
+         "size": 256,
+         "curve_name": "secp256r1"
+        }
+       },
+       {
+        "cipher_suite": {
+         "name": "TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA",
+         "is_anonymous": false,
+         "key_size": 128
+        },
+        "ephemeral_key": {
+         "type_name": "ECDH",
+         "size": 256,
+         "curve_name": "secp256r1"
+        }
+       },
+       {
+        "cipher_suite": {
+         "name": "TLS_ECDHE_RSA_WITH_3DES_EDE_CBC_SHA",
+         "is_anonymous": false,
+         "key_size": 168
+        },
+        "ephemeral_key": {
+         "type_name": "ECDH",
+         "size": 256,
+         "curve_name": "secp256r1"
+        }
+       },
+       {
+        "cipher_suite": {
+         "name": "TLS_DHE_RSA_WITH_CAMELLIA_256_CBC_SHA",
+         "is_anonymous": false,
+         "key_size": 256
+        },
+        "ephemeral_key": {
+         "type_name": "DH",
+         "size": 2048,
+         "curve_name": null
+        }
+       },
+       {
+        "cipher_suite": {
+         "name": "TLS_DHE_RSA_WITH_CAMELLIA_128_CBC_SHA",
+         "is_anonymous": false,
+         "key_size": 128
+        },
+        "ephemeral_key": {
+         "type_name": "DH",
+         "size": 2048,
+         "curve_name": null
+        }
+       },
+       {
+        "cipher_suite": {
+         "name": "TLS_DHE_RSA_WITH_AES_256_GCM_SHA384",
+         "is_anonymous": false,
+         "key_size": 256
+        },
+        "ephemeral_key": {
+         "type_name": "DH",
+         "size": 2048,
+         "curve_name": null
+        }
+       },
+       {
+        "cipher_suite": {
+         "name": "TLS_DHE_RSA_WITH_AES_256_CBC_SHA256",
+         "is_anonymous": false,
+         "key_size": 256
+        },
+        "ephemeral_key": {
+         "type_name": "DH",
+         "size": 2048,
+         "curve_name": null
+        }
+       },
+       {
+        "cipher_suite": {
+         "name": "TLS_DHE_RSA_WITH_AES_256_CBC_SHA",
+         "is_anonymous": false,
+         "key_size": 256
+        },
+        "ephemeral_key": {
+         "type_name": "DH",
+         "size": 2048,
+         "curve_name": null
+        }
+       },
+       {
+        "cipher_suite": {
+         "name": "TLS_DHE_RSA_WITH_AES_128_GCM_SHA256",
+         "is_anonymous": false,
+         "key_size": 128
+        },
+        "ephemeral_key": {
+         "type_name": "DH",
+         "size": 2048,
+         "curve_name": null
+        }
+       },
+       {
+        "cipher_suite": {
+         "name": "TLS_DHE_RSA_WITH_AES_128_CBC_SHA256",
+         "is_anonymous": false,
+         "key_size": 128
+        },
+        "ephemeral_key": {
+         "type_name": "DH",
+         "size": 2048,
+         "curve_name": null
+        }
+       },
+       {
+        "cipher_suite": {
+         "name": "TLS_DHE_RSA_WITH_AES_128_CBC_SHA",
+         "is_anonymous": false,
+         "key_size": 128
+        },
+        "ephemeral_key": {
+         "type_name": "DH",
+         "size": 2048,
+         "curve_name": null
+        }
+       }
+      ]
+     }
+    },
+    "tls_1_3_cipher_suites": {
+     "result": {
+      "accepted_cipher_suites": []
+     }
+    },
+    "certificate_info": {
+     "result": {
+      "certificate_deployments": [
+       {
+        "path_validation_results": [
+         {
+          "trust_store": {
+           "name": "Android",
+           "version": "16.0.0_r4"
+          },
+          "was_validation_successful": false,
+          "validation_error": "validation failed: invalid extension: 2.5.29.35: Certificate is missing required extension (encountered processing <Certificate(subject=<Name(C=US,ST=California,L=San Francisco,O=BadSSL,CN=*.badssl.com)>, ...)>)"
+         },
+         {
+          "trust_store": {
+           "name": "Apple",
+           "version": "iOS 26, iPadOS 26, macOS 26, tvOS 26, visionOS 26 and watchOS 26"
+          },
+          "was_validation_successful": false,
+          "validation_error": "validation failed: invalid extension: 2.5.29.35: Certificate is missing required extension (encountered processing <Certificate(subject=<Name(C=US,ST=California,L=San Francisco,O=BadSSL,CN=*.badssl.com)>, ...)>)"
+         },
+         {
+          "trust_store": {
+           "name": "Java",
+           "version": "jdk-13.0.2"
+          },
+          "was_validation_successful": false,
+          "validation_error": "validation failed: invalid extension: 2.5.29.35: Certificate is missing required extension (encountered processing <Certificate(subject=<Name(C=US,ST=California,L=San Francisco,O=BadSSL,CN=*.badssl.com)>, ...)>)"
+         },
+         {
+          "trust_store": {
+           "name": "Mozilla",
+           "version": "2026-03-28"
+          },
+          "was_validation_successful": false,
+          "validation_error": "validation failed: invalid extension: 2.5.29.35: Certificate is missing required extension (encountered processing <Certificate(subject=<Name(C=US,ST=California,L=San Francisco,O=BadSSL,CN=*.badssl.com)>, ...)>)"
+         },
+         {
+          "trust_store": {
+           "name": "Windows",
+           "version": "2026-03-28"
+          },
+          "was_validation_successful": false,
+          "validation_error": "validation failed: invalid extension: 2.5.29.35: Certificate is missing required extension (encountered processing <Certificate(subject=<Name(C=US,ST=California,L=San Francisco,O=BadSSL,CN=*.badssl.com)>, ...)>)"
+         }
+        ],
+        "received_certificate_chain": [
+         {
+          "subject": "CN=*.badssl.com,O=BadSSL,L=San Francisco,ST=California,C=US",
+          "not_valid_before": "2026-09-29T21:01:43Z",
+          "not_valid_after": "2028-09-28T21:01:43Z"
+         }
+        ]
+       }
+      ]
+     }
+    }
+   }
+  },
+  {
+   "server_location": {
+    "hostname": "untrusted-root.badssl.com",
+    "port": 443,
+    "ip_address": "104.154.89.105"
+   },
+   "scan_status": "COMPLETED",
+   "connectivity_status": "COMPLETED",
+   "scan_result": {
+    "ssl_3_0_cipher_suites": {
+     "result": {
+      "accepted_cipher_suites": []
+     }
+    },
+    "tls_1_0_cipher_suites": {
+     "result": {
+      "accepted_cipher_suites": []
+     }
+    },
+    "tls_1_1_cipher_suites": {
+     "result": {
+      "accepted_cipher_suites": [
+       {
+        "cipher_suite": {
+         "name": "TLS_RSA_WITH_CAMELLIA_256_CBC_SHA",
+         "is_anonymous": false,
+         "key_size": 256
+        },
+        "ephemeral_key": null
+       },
+       {
+        "cipher_suite": {
+         "name": "TLS_RSA_WITH_CAMELLIA_128_CBC_SHA",
+         "is_anonymous": false,
+         "key_size": 128
+        },
+        "ephemeral_key": null
+       },
+       {
+        "cipher_suite": {
+         "name": "TLS_RSA_WITH_AES_256_CBC_SHA",
+         "is_anonymous": false,
+         "key_size": 256
+        },
+        "ephemeral_key": null
+       },
+       {
+        "cipher_suite": {
+         "name": "TLS_RSA_WITH_AES_128_CBC_SHA",
+         "is_anonymous": false,
+         "key_size": 128
+        },
+        "ephemeral_key": null
+       },
+       {
+        "cipher_suite": {
+         "name": "TLS_RSA_WITH_3DES_EDE_CBC_SHA",
+         "is_anonymous": false,
+         "key_size": 168
+        },
+        "ephemeral_key": null
+       },
+       {
+        "cipher_suite": {
+         "name": "TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA",
+         "is_anonymous": false,
+         "key_size": 256
+        },
+        "ephemeral_key": {
+         "type_name": "ECDH",
+         "size": 256,
+         "curve_name": "secp256r1"
+        }
+       },
+       {
+        "cipher_suite": {
+         "name": "TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA",
+         "is_anonymous": false,
+         "key_size": 128
+        },
+        "ephemeral_key": {
+         "type_name": "ECDH",
+         "size": 256,
+         "curve_name": "secp256r1"
+        }
+       },
+       {
+        "cipher_suite": {
+         "name": "TLS_ECDHE_RSA_WITH_3DES_EDE_CBC_SHA",
+         "is_anonymous": false,
+         "key_size": 168
+        },
+        "ephemeral_key": {
+         "type_name": "ECDH",
+         "size": 256,
+         "curve_name": "secp256r1"
+        }
+       },
+       {
+        "cipher_suite": {
+         "name": "TLS_DHE_RSA_WITH_CAMELLIA_256_CBC_SHA",
+         "is_anonymous": false,
+         "key_size": 256
+        },
+        "ephemeral_key": {
+         "type_name": "DH",
+         "size": 2048,
+         "curve_name": null
+        }
+       },
+       {
+        "cipher_suite": {
+         "name": "TLS_DHE_RSA_WITH_CAMELLIA_128_CBC_SHA",
+         "is_anonymous": false,
+         "key_size": 128
+        },
+        "ephemeral_key": {
+         "type_name": "DH",
+         "size": 2048,
+         "curve_name": null
+        }
+       },
+       {
+        "cipher_suite": {
+         "name": "TLS_DHE_RSA_WITH_AES_256_CBC_SHA",
+         "is_anonymous": false,
+         "key_size": 256
+        },
+        "ephemeral_key": {
+         "type_name": "DH",
+         "size": 2048,
+         "curve_name": null
+        }
+       },
+       {
+        "cipher_suite": {
+         "name": "TLS_DHE_RSA_WITH_AES_128_CBC_SHA",
+         "is_anonymous": false,
+         "key_size": 128
+        },
+        "ephemeral_key": {
+         "type_name": "DH",
+         "size": 2048,
+         "curve_name": null
+        }
+       }
+      ]
+     }
+    },
+    "tls_1_2_cipher_suites": {
+     "result": {
+      "accepted_cipher_suites": [
+       {
+        "cipher_suite": {
+         "name": "TLS_RSA_WITH_CAMELLIA_256_CBC_SHA",
+         "is_anonymous": false,
+         "key_size": 256
+        },
+        "ephemeral_key": null
+       },
+       {
+        "cipher_suite": {
+         "name": "TLS_RSA_WITH_CAMELLIA_128_CBC_SHA",
+         "is_anonymous": false,
+         "key_size": 128
+        },
+        "ephemeral_key": null
+       },
+       {
+        "cipher_suite": {
+         "name": "TLS_RSA_WITH_AES_256_GCM_SHA384",
+         "is_anonymous": false,
+         "key_size": 256
+        },
+        "ephemeral_key": null
+       },
+       {
+        "cipher_suite": {
+         "name": "TLS_RSA_WITH_AES_256_CBC_SHA256",
+         "is_anonymous": false,
+         "key_size": 256
+        },
+        "ephemeral_key": null
+       },
+       {
+        "cipher_suite": {
+         "name": "TLS_RSA_WITH_AES_256_CBC_SHA",
+         "is_anonymous": false,
+         "key_size": 256
+        },
+        "ephemeral_key": null
+       },
+       {
+        "cipher_suite": {
+         "name": "TLS_RSA_WITH_AES_128_GCM_SHA256",
+         "is_anonymous": false,
+         "key_size": 128
+        },
+        "ephemeral_key": null
+       },
+       {
+        "cipher_suite": {
+         "name": "TLS_RSA_WITH_AES_128_CBC_SHA256",
+         "is_anonymous": false,
+         "key_size": 128
+        },
+        "ephemeral_key": null
+       },
+       {
+        "cipher_suite": {
+         "name": "TLS_RSA_WITH_AES_128_CBC_SHA",
+         "is_anonymous": false,
+         "key_size": 128
+        },
+        "ephemeral_key": null
+       },
+       {
+        "cipher_suite": {
+         "name": "TLS_RSA_WITH_3DES_EDE_CBC_SHA",
+         "is_anonymous": false,
+         "key_size": 168
+        },
+        "ephemeral_key": null
+       },
+       {
+        "cipher_suite": {
+         "name": "TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384",
+         "is_anonymous": false,
+         "key_size": 256
+        },
+        "ephemeral_key": {
+         "type_name": "ECDH",
+         "size": 256,
+         "curve_name": "secp256r1"
+        }
+       },
+       {
+        "cipher_suite": {
+         "name": "TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384",
+         "is_anonymous": false,
+         "key_size": 256
+        },
+        "ephemeral_key": {
+         "type_name": "ECDH",
+         "size": 256,
+         "curve_name": "secp256r1"
+        }
+       },
+       {
+        "cipher_suite": {
+         "name": "TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA",
+         "is_anonymous": false,
+         "key_size": 256
+        },
+        "ephemeral_key": {
+         "type_name": "ECDH",
+         "size": 256,
+         "curve_name": "secp256r1"
+        }
+       },
+       {
+        "cipher_suite": {
+         "name": "TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256",
+         "is_anonymous": false,
+         "key_size": 128
+        },
+        "ephemeral_key": {
+         "type_name": "ECDH",
+         "size": 256,
+         "curve_name": "secp256r1"
+        }
+       },
+       {
+        "cipher_suite": {
+         "name": "TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256",
+         "is_anonymous": false,
+         "key_size": 128
+        },
+        "ephemeral_key": {
+         "type_name": "ECDH",
+         "size": 256,
+         "curve_name": "secp256r1"
+        }
+       },
+       {
+        "cipher_suite": {
+         "name": "TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA",
+         "is_anonymous": false,
+         "key_size": 128
+        },
+        "ephemeral_key": {
+         "type_name": "ECDH",
+         "size": 256,
+         "curve_name": "secp256r1"
+        }
+       },
+       {
+        "cipher_suite": {
+         "name": "TLS_ECDHE_RSA_WITH_3DES_EDE_CBC_SHA",
+         "is_anonymous": false,
+         "key_size": 168
+        },
+        "ephemeral_key": {
+         "type_name": "ECDH",
+         "size": 256,
+         "curve_name": "secp256r1"
+        }
+       },
+       {
+        "cipher_suite": {
+         "name": "TLS_DHE_RSA_WITH_CAMELLIA_256_CBC_SHA",
+         "is_anonymous": false,
+         "key_size": 256
+        },
+        "ephemeral_key": {
+         "type_name": "DH",
+         "size": 2048,
+         "curve_name": null
+        }
+       },
+       {
+        "cipher_suite": {
+         "name": "TLS_DHE_RSA_WITH_CAMELLIA_128_CBC_SHA",
+         "is_anonymous": false,
+         "key_size": 128
+        },
+        "ephemeral_key": {
+         "type_name": "DH",
+         "size": 2048,
+         "curve_name": null
+        }
+       },
+       {
+        "cipher_suite": {
+         "name": "TLS_DHE_RSA_WITH_AES_256_GCM_SHA384",
+         "is_anonymous": false,
+         "key_size": 256
+        },
+        "ephemeral_key": {
+         "type_name": "DH",
+         "size": 2048,
+         "curve_name": null
+        }
+       },
+       {
+        "cipher_suite": {
+         "name": "TLS_DHE_RSA_WITH_AES_256_CBC_SHA256",
+         "is_anonymous": false,
+         "key_size": 256
+        },
+        "ephemeral_key": {
+         "type_name": "DH",
+         "size": 2048,
+         "curve_name": null
+        }
+       },
+       {
+        "cipher_suite": {
+         "name": "TLS_DHE_RSA_WITH_AES_256_CBC_SHA",
+         "is_anonymous": false,
+         "key_size": 256
+        },
+        "ephemeral_key": {
+         "type_name": "DH",
+         "size": 2048,
+         "curve_name": null
+        }
+       },
+       {
+        "cipher_suite": {
+         "name": "TLS_DHE_RSA_WITH_AES_128_GCM_SHA256",
+         "is_anonymous": false,
+         "key_size": 128
+        },
+        "ephemeral_key": {
+         "type_name": "DH",
+         "size": 2048,
+         "curve_name": null
+        }
+       },
+       {
+        "cipher_suite": {
+         "name": "TLS_DHE_RSA_WITH_AES_128_CBC_SHA256",
+         "is_anonymous": false,
+         "key_size": 128
+        },
+        "ephemeral_key": {
+         "type_name": "DH",
+         "size": 2048,
+         "curve_name": null
+        }
+       },
+       {
+        "cipher_suite": {
+         "name": "TLS_DHE_RSA_WITH_AES_128_CBC_SHA",
+         "is_anonymous": false,
+         "key_size": 128
+        },
+        "ephemeral_key": {
+         "type_name": "DH",
+         "size": 2048,
+         "curve_name": null
+        }
+       }
+      ]
+     }
+    },
+    "tls_1_3_cipher_suites": {
+     "result": {
+      "accepted_cipher_suites": []
+     }
+    },
+    "certificate_info": {
+     "result": {
+      "certificate_deployments": [
+       {
+        "path_validation_results": [
+         {
+          "trust_store": {
+           "name": "Android",
+           "version": "16.0.0_r4"
+          },
+          "was_validation_successful": false,
+          "validation_error": "validation failed: invalid extension: 2.5.29.35: Certificate is missing required extension (encountered processing <Certificate(subject=<Name(C=US,ST=California,L=San Francisco,O=BadSSL,CN=*.badssl.com)>, ...)>)"
+         },
+         {
+          "trust_store": {
+           "name": "Apple",
+           "version": "iOS 26, iPadOS 26, macOS 26, tvOS 26, visionOS 26 and watchOS 26"
+          },
+          "was_validation_successful": false,
+          "validation_error": "validation failed: invalid extension: 2.5.29.35: Certificate is missing required extension (encountered processing <Certificate(subject=<Name(C=US,ST=California,L=San Francisco,O=BadSSL,CN=*.badssl.com)>, ...)>)"
+         },
+         {
+          "trust_store": {
+           "name": "Java",
+           "version": "jdk-13.0.2"
+          },
+          "was_validation_successful": false,
+          "validation_error": "validation failed: invalid extension: 2.5.29.35: Certificate is missing required extension (encountered processing <Certificate(subject=<Name(C=US,ST=California,L=San Francisco,O=BadSSL,CN=*.badssl.com)>, ...)>)"
+         },
+         {
+          "trust_store": {
+           "name": "Mozilla",
+           "version": "2026-03-28"
+          },
+          "was_validation_successful": false,
+          "validation_error": "validation failed: invalid extension: 2.5.29.35: Certificate is missing required extension (encountered processing <Certificate(subject=<Name(C=US,ST=California,L=San Francisco,O=BadSSL,CN=*.badssl.com)>, ...)>)"
+         },
+         {
+          "trust_store": {
+           "name": "Windows",
+           "version": "2026-03-28"
+          },
+          "was_validation_successful": false,
+          "validation_error": "validation failed: invalid extension: 2.5.29.35: Certificate is missing required extension (encountered processing <Certificate(subject=<Name(C=US,ST=California,L=San Francisco,O=BadSSL,CN=*.badssl.com)>, ...)>)"
+         }
+        ],
+        "received_certificate_chain": [
+         {
+          "subject": "CN=*.badssl.com,O=BadSSL,L=San Francisco,ST=California,C=US",
+          "not_valid_before": "2026-09-29T21:01:43Z",
+          "not_valid_after": "2028-09-28T21:01:43Z"
+         },
+         {
+          "subject": "CN=BadSSL Untrusted Root Certificate Authority,O=BadSSL,L=San Francisco,ST=California,C=US",
+          "not_valid_before": "2016-07-07T06:31:35Z",
+          "not_valid_after": "2036-07-02T06:31:35Z"
+         }
+        ]
+       }
+      ]
+     }
+    }
+   }
+  },
+  {
+   "server_location": {
+    "hostname": "3des.badssl.com",
+    "port": 443,
+    "ip_address": "104.154.89.105"
+   },
+   "scan_status": "COMPLETED",
+   "connectivity_status": "COMPLETED",
+   "scan_result": {
+    "ssl_3_0_cipher_suites": {
+     "result": {
+      "accepted_cipher_suites": []
+     }
+    },
+    "tls_1_0_cipher_suites": {
+     "result": {
+      "accepted_cipher_suites": []
+     }
+    },
+    "tls_1_1_cipher_suites": {
+     "result": {
+      "accepted_cipher_suites": [
+       {
+        "cipher_suite": {
+         "name": "TLS_RSA_WITH_3DES_EDE_CBC_SHA",
+         "is_anonymous": false,
+         "key_size": 168
+        },
+        "ephemeral_key": null
+       },
+       {
+        "cipher_suite": {
+         "name": "TLS_ECDHE_RSA_WITH_3DES_EDE_CBC_SHA",
+         "is_anonymous": false,
+         "key_size": 168
+        },
+        "ephemeral_key": {
+         "type_name": "ECDH",
+         "size": 256,
+         "curve_name": "secp256r1"
+        }
+       },
+       {
+        "cipher_suite": {
+         "name": "TLS_DHE_RSA_WITH_3DES_EDE_CBC_SHA",
+         "is_anonymous": false,
+         "key_size": 168
+        },
+        "ephemeral_key": {
+         "type_name": "DH",
+         "size": 1024,
+         "curve_name": null
+        }
+       }
+      ]
+     }
+    },
+    "tls_1_2_cipher_suites": {
+     "result": {
+      "accepted_cipher_suites": [
+       {
+        "cipher_suite": {
+         "name": "TLS_RSA_WITH_3DES_EDE_CBC_SHA",
+         "is_anonymous": false,
+         "key_size": 168
+        },
+        "ephemeral_key": null
+       },
+       {
+        "cipher_suite": {
+         "name": "TLS_ECDHE_RSA_WITH_3DES_EDE_CBC_SHA",
+         "is_anonymous": false,
+         "key_size": 168
+        },
+        "ephemeral_key": {
+         "type_name": "ECDH",
+         "size": 256,
+         "curve_name": "secp256r1"
+        }
+       },
+       {
+        "cipher_suite": {
+         "name": "TLS_DHE_RSA_WITH_3DES_EDE_CBC_SHA",
+         "is_anonymous": false,
+         "key_size": 168
+        },
+        "ephemeral_key": {
+         "type_name": "DH",
+         "size": 1024,
+         "curve_name": null
+        }
+       }
+      ]
+     }
+    },
+    "tls_1_3_cipher_suites": {
+     "result": {
+      "accepted_cipher_suites": []
+     }
+    },
+    "certificate_info": {
+     "result": {
+      "certificate_deployments": [
+       {
+        "path_validation_results": [
+         {
+          "trust_store": {
+           "name": "Android",
+           "version": "16.0.0_r4"
+          },
+          "was_validation_successful": true,
+          "validation_error": null
+         },
+         {
+          "trust_store": {
+           "name": "Apple",
+           "version": "iOS 26, iPadOS 26, macOS 26, tvOS 26, visionOS 26 and watchOS 26"
+          },
+          "was_validation_successful": true,
+          "validation_error": null
+         },
+         {
+          "trust_store": {
+           "name": "Java",
+           "version": "jdk-13.0.2"
+          },
+          "was_validation_successful": true,
+          "validation_error": null
+         },
+         {
+          "trust_store": {
+           "name": "Mozilla",
+           "version": "2026-03-28"
+          },
+          "was_validation_successful": true,
+          "validation_error": null
+         },
+         {
+          "trust_store": {
+           "name": "Windows",
+           "version": "2026-03-28"
+          },
+          "was_validation_successful": true,
+          "validation_error": null
+         }
+        ],
+        "received_certificate_chain": [
+         {
+          "subject": "CN=*.badssl.com",
+          "not_valid_before": "2026-09-29T20:02:56Z",
+          "not_valid_after": "2026-12-28T20:02:55Z"
+         },
+         {
+          "subject": "CN=YR1,O=Let's Encrypt,C=US",
+          "not_valid_before": "2025-09-03T00:00:00Z",
+          "not_valid_after": "2028-09-02T23:59:59Z"
+         },
+         {
+          "subject": "CN=Root YR,O=ISRG,C=US",
+          "not_valid_before": "2026-05-13T00:00:00Z",
+          "not_valid_after": "2032-09-02T23:59:59Z"
+         }
+        ]
+       }
+      ]
+     }
+    }
+   }
+  },
+  {
+   "server_location": {
+    "hostname": "rc4.badssl.com",
+    "port": 443,
+    "ip_address": "104.154.89.105"
+   },
+   "scan_status": "COMPLETED",
+   "connectivity_status": "COMPLETED",
+   "scan_result": {
+    "ssl_3_0_cipher_suites": {
+     "result": {
+      "accepted_cipher_suites": []
+     }
+    },
+    "tls_1_0_cipher_suites": {
+     "result": {
+      "accepted_cipher_suites": []
+     }
+    },
+    "tls_1_1_cipher_suites": {
+     "result": {
+      "accepted_cipher_suites": [
+       {
+        "cipher_suite": {
+         "name": "TLS_RSA_WITH_RC4_128_SHA",
+         "is_anonymous": false,
+         "key_size": 128
+        },
+        "ephemeral_key": null
+       },
+       {
+        "cipher_suite": {
+         "name": "TLS_ECDHE_RSA_WITH_RC4_128_SHA",
+         "is_anonymous": false,
+         "key_size": 128
+        },
+        "ephemeral_key": {
+         "type_name": "ECDH",
+         "size": 256,
+         "curve_name": "secp256r1"
+        }
+       }
+      ]
+     }
+    },
+    "tls_1_2_cipher_suites": {
+     "result": {
+      "accepted_cipher_suites": [
+       {
+        "cipher_suite": {
+         "name": "TLS_RSA_WITH_RC4_128_SHA",
+         "is_anonymous": false,
+         "key_size": 128
+        },
+        "ephemeral_key": null
+       },
+       {
+        "cipher_suite": {
+         "name": "TLS_ECDHE_RSA_WITH_RC4_128_SHA",
+         "is_anonymous": false,
+         "key_size": 128
+        },
+        "ephemeral_key": {
+         "type_name": "ECDH",
+         "size": 256,
+         "curve_name": "secp256r1"
+        }
+       }
+      ]
+     }
+    },
+    "tls_1_3_cipher_suites": {
+     "result": {
+      "accepted_cipher_suites": []
+     }
+    },
+    "certificate_info": {
+     "result": {
+      "certificate_deployments": [
+       {
+        "path_validation_results": [
+         {
+          "trust_store": {
+           "name": "Android",
+           "version": "16.0.0_r4"
+          },
+          "was_validation_successful": true,
+          "validation_error": null
+         },
+         {
+          "trust_store": {
+           "name": "Apple",
+           "version": "iOS 26, iPadOS 26, macOS 26, tvOS 26, visionOS 26 and watchOS 26"
+          },
+          "was_validation_successful": true,
+          "validation_error": null
+         },
+         {
+          "trust_store": {
+           "name": "Java",
+           "version": "jdk-13.0.2"
+          },
+          "was_validation_successful": true,
+          "validation_error": null
+         },
+         {
+          "trust_store": {
+           "name": "Mozilla",
+           "version": "2026-03-28"
+          },
+          "was_validation_successful": true,
+          "validation_error": null
+         },
+         {
+          "trust_store": {
+           "name": "Windows",
+           "version": "2026-03-28"
+          },
+          "was_validation_successful": true,
+          "validation_error": null
+         }
+        ],
+        "received_certificate_chain": [
+         {
+          "subject": "CN=*.badssl.com",
+          "not_valid_before": "2026-09-29T20:02:56Z",
+          "not_valid_after": "2026-12-28T20:02:55Z"
+         },
+         {
+          "subject": "CN=YR1,O=Let's Encrypt,C=US",
+          "not_valid_before": "2025-09-03T00:00:00Z",
+          "not_valid_after": "2028-09-02T23:59:59Z"
+         },
+         {
+          "subject": "CN=Root YR,O=ISRG,C=US",
+          "not_valid_before": "2026-05-13T00:00:00Z",
+          "not_valid_after": "2032-09-02T23:59:59Z"
+         }
+        ]
+       }
+      ]
+     }
+    }
+   }
+  },
+  {
+   "server_location": {
+    "hostname": "tls-v1-1.badssl.com",
+    "port": 1011,
+    "ip_address": "104.154.89.105"
+   },
+   "scan_status": "COMPLETED",
+   "connectivity_status": "COMPLETED",
+   "scan_result": {
+    "ssl_3_0_cipher_suites": {
+     "result": {
+      "accepted_cipher_suites": []
+     }
+    },
+    "tls_1_0_cipher_suites": {
+     "result": {
+      "accepted_cipher_suites": []
+     }
+    },
+    "tls_1_1_cipher_suites": {
+     "result": {
+      "accepted_cipher_suites": [
+       {
+        "cipher_suite": {
+         "name": "TLS_RSA_WITH_CAMELLIA_256_CBC_SHA",
+         "is_anonymous": false,
+         "key_size": 256
+        },
+        "ephemeral_key": null
+       },
+       {
+        "cipher_suite": {
+         "name": "TLS_RSA_WITH_CAMELLIA_128_CBC_SHA",
+         "is_anonymous": false,
+         "key_size": 128
+        },
+        "ephemeral_key": null
+       },
+       {
+        "cipher_suite": {
+         "name": "TLS_RSA_WITH_AES_256_CBC_SHA",
+         "is_anonymous": false,
+         "key_size": 256
+        },
+        "ephemeral_key": null
+       },
+       {
+        "cipher_suite": {
+         "name": "TLS_RSA_WITH_AES_128_CBC_SHA",
+         "is_anonymous": false,
+         "key_size": 128
+        },
+        "ephemeral_key": null
+       },
+       {
+        "cipher_suite": {
+         "name": "TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA",
+         "is_anonymous": false,
+         "key_size": 256
+        },
+        "ephemeral_key": {
+         "type_name": "ECDH",
+         "size": 256,
+         "curve_name": "secp256r1"
+        }
+       },
+       {
+        "cipher_suite": {
+         "name": "TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA",
+         "is_anonymous": false,
+         "key_size": 128
+        },
+        "ephemeral_key": {
+         "type_name": "ECDH",
+         "size": 256,
+         "curve_name": "secp256r1"
+        }
+       },
+       {
+        "cipher_suite": {
+         "name": "TLS_DHE_RSA_WITH_CAMELLIA_256_CBC_SHA",
+         "is_anonymous": false,
+         "key_size": 256
+        },
+        "ephemeral_key": {
+         "type_name": "DH",
+         "size": 1024,
+         "curve_name": null
+        }
+       },
+       {
+        "cipher_suite": {
+         "name": "TLS_DHE_RSA_WITH_CAMELLIA_128_CBC_SHA",
+         "is_anonymous": false,
+         "key_size": 128
+        },
+        "ephemeral_key": {
+         "type_name": "DH",
+         "size": 1024,
+         "curve_name": null
+        }
+       },
+       {
+        "cipher_suite": {
+         "name": "TLS_DHE_RSA_WITH_AES_256_CBC_SHA",
+         "is_anonymous": false,
+         "key_size": 256
+        },
+        "ephemeral_key": {
+         "type_name": "DH",
+         "size": 1024,
+         "curve_name": null
+        }
+       },
+       {
+        "cipher_suite": {
+         "name": "TLS_DHE_RSA_WITH_AES_128_CBC_SHA",
+         "is_anonymous": false,
+         "key_size": 128
+        },
+        "ephemeral_key": {
+         "type_name": "DH",
+         "size": 1024,
+         "curve_name": null
+        }
+       }
+      ]
+     }
+    },
+    "tls_1_2_cipher_suites": {
+     "result": {
+      "accepted_cipher_suites": []
+     }
+    },
+    "tls_1_3_cipher_suites": {
+     "result": {
+      "accepted_cipher_suites": []
+     }
+    },
+    "certificate_info": {
+     "result": {
+      "certificate_deployments": [
+       {
+        "path_validation_results": [
+         {
+          "trust_store": {
+           "name": "Android",
+           "version": "16.0.0_r4"
+          },
+          "was_validation_successful": true,
+          "validation_error": null
+         },
+         {
+          "trust_store": {
+           "name": "Apple",
+           "version": "iOS 26, iPadOS 26, macOS 26, tvOS 26, visionOS 26 and watchOS 26"
+          },
+          "was_validation_successful": true,
+          "validation_error": null
+         },
+         {
+          "trust_store": {
+           "name": "Java",
+           "version": "jdk-13.0.2"
+          },
+          "was_validation_successful": true,
+          "validation_error": null
+         },
+         {
+          "trust_store": {
+           "name": "Mozilla",
+           "version": "2026-03-28"
+          },
+          "was_validation_successful": true,
+          "validation_error": null
+         },
+         {
+          "trust_store": {
+           "name": "Windows",
+           "version": "2026-03-28"
+          },
+          "was_validation_successful": true,
+          "validation_error": null
+         }
+        ],
+        "received_certificate_chain": [
+         {
+          "subject": "CN=*.badssl.com",
+          "not_valid_before": "2026-09-29T20:02:56Z",
+          "not_valid_after": "2026-12-28T20:02:55Z"
+         },
+         {
+          "subject": "CN=YR1,O=Let's Encrypt,C=US",
+          "not_valid_before": "2025-09-03T00:00:00Z",
+          "not_valid_after": "2028-09-02T23:59:59Z"
+         },
+         {
+          "subject": "CN=Root YR,O=ISRG,C=US",
+          "not_valid_before": "2026-05-13T00:00:00Z",
+          "not_valid_after": "2032-09-02T23:59:59Z"
+         }
+        ]
+       }
+      ]
+     }
+    }
+   }
+  },
+  {
+   "server_location": {
+    "hostname": "null.badssl.com",
+    "port": 443,
+    "ip_address": "104.154.89.105"
+   },
+   "scan_status": "COMPLETED",
+   "connectivity_status": "COMPLETED",
+   "scan_result": {
+    "ssl_3_0_cipher_suites": {
+     "result": {
+      "accepted_cipher_suites": []
+     }
+    },
+    "tls_1_0_cipher_suites": {
+     "result": {
+      "accepted_cipher_suites": []
+     }
+    },
+    "tls_1_1_cipher_suites": {
+     "result": {
+      "accepted_cipher_suites": [
+       {
+        "cipher_suite": {
+         "name": "TLS_RSA_WITH_NULL_SHA",
+         "is_anonymous": false,
+         "key_size": 0
+        },
+        "ephemeral_key": null
+       },
+       {
+        "cipher_suite": {
+         "name": "TLS_ECDH_anon_WITH_NULL_SHA",
+         "is_anonymous": true,
+         "key_size": 0
+        },
+        "ephemeral_key": {
+         "type_name": "ECDH",
+         "size": 256,
+         "curve_name": "secp256r1"
+        }
+       },
+       {
+        "cipher_suite": {
+         "name": "TLS_ECDH_anon_WITH_AES_256_CBC_SHA",
+         "is_anonymous": true,
+         "key_size": 256
+        },
+        "ephemeral_key": {
+         "type_name": "ECDH",
+         "size": 256,
+         "curve_name": "secp256r1"
+        }
+       },
+       {
+        "cipher_suite": {
+         "name": "TLS_ECDH_anon_WITH_AES_128_CBC_SHA",
+         "is_anonymous": true,
+         "key_size": 128
+        },
+        "ephemeral_key": {
+         "type_name": "ECDH",
+         "size": 256,
+         "curve_name": "secp256r1"
+        }
+       },
+       {
+        "cipher_suite": {
+         "name": "TLS_ECDHE_RSA_WITH_NULL_SHA",
+         "is_anonymous": false,
+         "key_size": 0
+        },
+        "ephemeral_key": {
+         "type_name": "ECDH",
+         "size": 256,
+         "curve_name": "secp256r1"
+        }
+       },
+       {
+        "cipher_suite": {
+         "name": "TLS_DH_anon_WITH_SEED_CBC_SHA",
+         "is_anonymous": true,
+         "key_size": 128
+        },
+        "ephemeral_key": {
+         "type_name": "DH",
+         "size": 1024,
+         "curve_name": null
+        }
+       },
+       {
+        "cipher_suite": {
+         "name": "TLS_DH_anon_WITH_CAMELLIA_256_CBC_SHA",
+         "is_anonymous": true,
+         "key_size": 256
+        },
+        "ephemeral_key": {
+         "type_name": "DH",
+         "size": 1024,
+         "curve_name": null
+        }
+       },
+       {
+        "cipher_suite": {
+         "name": "TLS_DH_anon_WITH_CAMELLIA_128_CBC_SHA",
+         "is_anonymous": true,
+         "key_size": 128
+        },
+        "ephemeral_key": {
+         "type_name": "DH",
+         "size": 1024,
+         "curve_name": null
+        }
+       },
+       {
+        "cipher_suite": {
+         "name": "TLS_DH_anon_WITH_AES_256_CBC_SHA",
+         "is_anonymous": true,
+         "key_size": 256
+        },
+        "ephemeral_key": {
+         "type_name": "DH",
+         "size": 1024,
+         "curve_name": null
+        }
+       },
+       {
+        "cipher_suite": {
+         "name": "TLS_DH_anon_WITH_AES_128_CBC_SHA",
+         "is_anonymous": true,
+         "key_size": 128
+        },
+        "ephemeral_key": {
+         "type_name": "DH",
+         "size": 1024,
+         "curve_name": null
+        }
+       }
+      ]
+     }
+    },
+    "tls_1_2_cipher_suites": {
+     "result": {
+      "accepted_cipher_suites": [
+       {
+        "cipher_suite": {
+         "name": "TLS_RSA_WITH_NULL_SHA256",
+         "is_anonymous": false,
+         "key_size": 0
+        },
+        "ephemeral_key": null
+       },
+       {
+        "cipher_suite": {
+         "name": "TLS_RSA_WITH_NULL_SHA",
+         "is_anonymous": false,
+         "key_size": 0
+        },
+        "ephemeral_key": null
+       },
+       {
+        "cipher_suite": {
+         "name": "TLS_ECDH_anon_WITH_NULL_SHA",
+         "is_anonymous": true,
+         "key_size": 0
+        },
+        "ephemeral_key": {
+         "type_name": "ECDH",
+         "size": 256,
+         "curve_name": "secp256r1"
+        }
+       },
+       {
+        "cipher_suite": {
+         "name": "TLS_ECDH_anon_WITH_AES_256_CBC_SHA",
+         "is_anonymous": true,
+         "key_size": 256
+        },
+        "ephemeral_key": {
+         "type_name": "ECDH",
+         "size": 256,
+         "curve_name": "secp256r1"
+        }
+       },
+       {
+        "cipher_suite": {
+         "name": "TLS_ECDH_anon_WITH_AES_128_CBC_SHA",
+         "is_anonymous": true,
+         "key_size": 128
+        },
+        "ephemeral_key": {
+         "type_name": "ECDH",
+         "size": 256,
+         "curve_name": "secp256r1"
+        }
+       },
+       {
+        "cipher_suite": {
+         "name": "TLS_ECDHE_RSA_WITH_NULL_SHA",
+         "is_anonymous": false,
+         "key_size": 0
+        },
+        "ephemeral_key": {
+         "type_name": "ECDH",
+         "size": 256,
+         "curve_name": "secp256r1"
+        }
+       },
+       {
+        "cipher_suite": {
+         "name": "TLS_DH_anon_WITH_SEED_CBC_SHA",
+         "is_anonymous": true,
+         "key_size": 128
+        },
+        "ephemeral_key": {
+         "type_name": "DH",
+         "size": 1024,
+         "curve_name": null
+        }
+       },
+       {
+        "cipher_suite": {
+         "name": "TLS_DH_anon_WITH_CAMELLIA_256_CBC_SHA",
+         "is_anonymous": true,
+         "key_size": 256
+        },
+        "ephemeral_key": {
+         "type_name": "DH",
+         "size": 1024,
+         "curve_name": null
+        }
+       },
+       {
+        "cipher_suite": {
+         "name": "TLS_DH_anon_WITH_CAMELLIA_128_CBC_SHA",
+         "is_anonymous": true,
+         "key_size": 128
+        },
+        "ephemeral_key": {
+         "type_name": "DH",
+         "size": 1024,
+         "curve_name": null
+        }
+       },
+       {
+        "cipher_suite": {
+         "name": "TLS_DH_anon_WITH_AES_256_GCM_SHA384",
+         "is_anonymous": true,
+         "key_size": 256
+        },
+        "ephemeral_key": {
+         "type_name": "DH",
+         "size": 1024,
+         "curve_name": null
+        }
+       },
+       {
+        "cipher_suite": {
+         "name": "TLS_DH_anon_WITH_AES_256_CBC_SHA256",
+         "is_anonymous": true,
+         "key_size": 256
+        },
+        "ephemeral_key": {
+         "type_name": "DH",
+         "size": 1024,
+         "curve_name": null
+        }
+       },
+       {
+        "cipher_suite": {
+         "name": "TLS_DH_anon_WITH_AES_256_CBC_SHA",
+         "is_anonymous": true,
+         "key_size": 256
+        },
+        "ephemeral_key": {
+         "type_name": "DH",
+         "size": 1024,
+         "curve_name": null
+        }
+       },
+       {
+        "cipher_suite": {
+         "name": "TLS_DH_anon_WITH_AES_128_GCM_SHA256",
+         "is_anonymous": true,
+         "key_size": 128
+        },
+        "ephemeral_key": {
+         "type_name": "DH",
+         "size": 1024,
+         "curve_name": null
+        }
+       },
+       {
+        "cipher_suite": {
+         "name": "TLS_DH_anon_WITH_AES_128_CBC_SHA256",
+         "is_anonymous": true,
+         "key_size": 128
+        },
+        "ephemeral_key": {
+         "type_name": "DH",
+         "size": 1024,
+         "curve_name": null
+        }
+       },
+       {
+        "cipher_suite": {
+         "name": "TLS_DH_anon_WITH_AES_128_CBC_SHA",
+         "is_anonymous": true,
+         "key_size": 128
+        },
+        "ephemeral_key": {
+         "type_name": "DH",
+         "size": 1024,
+         "curve_name": null
+        }
+       }
+      ]
+     }
+    },
+    "tls_1_3_cipher_suites": {
+     "result": {
+      "accepted_cipher_suites": []
+     }
+    },
+    "certificate_info": {
+     "result": {
+      "certificate_deployments": [
+       {
+        "path_validation_results": [
+         {
+          "trust_store": {
+           "name": "Android",
+           "version": "16.0.0_r4"
+          },
+          "was_validation_successful": true,
+          "validation_error": null
+         },
+         {
+          "trust_store": {
+           "name": "Apple",
+           "version": "iOS 26, iPadOS 26, macOS 26, tvOS 26, visionOS 26 and watchOS 26"
+          },
+          "was_validation_successful": true,
+          "validation_error": null
+         },
+         {
+          "trust_store": {
+           "name": "Java",
+           "version": "jdk-13.0.2"
+          },
+          "was_validation_successful": true,
+          "validation_error": null
+         },
+         {
+          "trust_store": {
+           "name": "Mozilla",
+           "version": "2026-03-28"
+          },
+          "was_validation_successful": true,
+          "validation_error": null
+         },
+         {
+          "trust_store": {
+           "name": "Windows",
+           "version": "2026-03-28"
+          },
+          "was_validation_successful": true,
+          "validation_error": null
+         }
+        ],
+        "received_certificate_chain": [
+         {
+          "subject": "CN=*.badssl.com",
+          "not_valid_before": "2026-09-29T20:02:56Z",
+          "not_valid_after": "2026-12-28T20:02:55Z"
+         },
+         {
+          "subject": "CN=YR1,O=Let's Encrypt,C=US",
+          "not_valid_before": "2025-09-03T00:00:00Z",
+          "not_valid_after": "2028-09-02T23:59:59Z"
+         },
+         {
+          "subject": "CN=Root YR,O=ISRG,C=US",
+          "not_valid_before": "2026-05-13T00:00:00Z",
+          "not_valid_after": "2032-09-02T23:59:59Z"
+         }
+        ]
+       }
+      ]
+     }
+    }
+   }
+  }
+ ]
+}

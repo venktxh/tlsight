@@ -1,0 +1,20 @@
+# TLSight vs sslyze (6.3.1)
+
+Scan date: 2026-10-04.  Checks agreeing: **43**, disagreeing: **0**.
+
+| Host | TLSight (negotiated) | Grade | sslyze (everything accepted) | Checks |
+|---|---|---|---|---|
+| example.com | TLS 1.3, TLS_AES_256_GCM_SHA384 | A | accepts TLS 1.1, TLS 1.2, TLS 1.3; weak suites: TLS_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_128_CBC_SHA256, TLS_RSA_WITH_AES_128_GCM_SHA256 ...; Mozilla-trusted | version: agree, cipher: agree, trust: agree, expiry: agree |
+| microsoft.com | TLS 1.3, TLS_AES_256_GCM_SHA384 | A | accepts TLS 1.2, TLS 1.3; Mozilla-trusted | version: agree, cipher: agree, trust: agree, expiry: agree |
+| tls-v1-0.badssl.com:1010 | N/A | - | scan failed: server not reachable with any TLS version | - |
+| github.com | TLS 1.3, TLS_AES_128_GCM_SHA256 | A | accepts TLS 1.2, TLS 1.3; weak suites: TLS_RSA_WITH_AES_128_CBC_SHA256, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_256_CBC_SHA256 ...; Mozilla-trusted | version: agree, cipher: agree, trust: agree, expiry: agree |
+| dh1024.badssl.com | TLS 1.2, TLS_DHE_RSA_WITH_AES_128_GCM_SHA256; DH 1024; Weak 1024-bit DH group | C | accepts TLS 1.1, TLS 1.2; DH 1024; Mozilla-trusted | version: agree, cipher: agree, DH size: agree, trust: agree, expiry: agree |
+| static-rsa.badssl.com | TLS 1.2, TLS_RSA_WITH_AES_256_GCM_SHA384; No forward secrecy | C | accepts TLS 1.1, TLS 1.2; weak suites: TLS_RSA_WITH_3DES_EDE_CBC_SHA, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_128_CBC_SHA256 ...; Mozilla-trusted | version: agree, cipher: agree, trust: agree, expiry: agree |
+| wrong.host.badssl.com | TLS 1.2, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256; Certificate hostname mismatch | C | accepts TLS 1.1, TLS 1.2; DH 2048; weak suites: TLS_ECDHE_RSA_WITH_3DES_EDE_CBC_SHA, TLS_RSA_WITH_3DES_EDE_CBC_SHA, TLS_RSA_WITH_AES_128_CBC_SHA ...; NOT Mozilla-trusted | version: agree, cipher: agree, trust: agree, expiry: agree |
+| expired.badssl.com | TLS 1.2, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256; Leaf certificate expired; Chain certificate #2 (COMODO RSA Certification Authority) expired | F | accepts TLS 1.1, TLS 1.2; DH 2048; weak suites: TLS_ECDHE_RSA_WITH_3DES_EDE_CBC_SHA, TLS_RSA_WITH_3DES_EDE_CBC_SHA, TLS_RSA_WITH_AES_128_CBC_SHA ...; NOT Mozilla-trusted; cert expired | version: agree, cipher: agree, trust: agree, expiry: agree |
+| self-signed.badssl.com | TLS 1.2, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256; Self-signed certificate | C | accepts TLS 1.1, TLS 1.2; DH 2048; weak suites: TLS_ECDHE_RSA_WITH_3DES_EDE_CBC_SHA, TLS_RSA_WITH_3DES_EDE_CBC_SHA, TLS_RSA_WITH_AES_128_CBC_SHA ...; NOT Mozilla-trusted | version: agree, cipher: agree, trust: agree, expiry: agree |
+| untrusted-root.badssl.com | TLS 1.2, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256; Certificate chain not trusted | C | accepts TLS 1.1, TLS 1.2; DH 2048; weak suites: TLS_ECDHE_RSA_WITH_3DES_EDE_CBC_SHA, TLS_RSA_WITH_3DES_EDE_CBC_SHA, TLS_RSA_WITH_AES_128_CBC_SHA ...; NOT Mozilla-trusted | version: agree, cipher: agree, trust: agree, expiry: agree |
+| 3des.badssl.com | no completed handshake (client could not negotiate) | N/A | accepts TLS 1.1, TLS 1.2; DH 1024; weak suites: TLS_DHE_RSA_WITH_3DES_EDE_CBC_SHA, TLS_ECDHE_RSA_WITH_3DES_EDE_CBC_SHA, TLS_RSA_WITH_3DES_EDE_CBC_SHA; Mozilla-trusted | - |
+| rc4.badssl.com | no completed handshake (client could not negotiate) | N/A | accepts TLS 1.1, TLS 1.2; weak suites: TLS_ECDHE_RSA_WITH_RC4_128_SHA, TLS_RSA_WITH_RC4_128_SHA; Mozilla-trusted | - |
+| tls-v1-1.badssl.com:1011 | TLS 1.1, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA; TLS 1.1 negotiated | C | accepts TLS 1.1; DH 1024; weak suites: TLS_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_CAMELLIA_128_CBC_SHA ...; Mozilla-trusted | version: agree, cipher: agree, trust: agree, expiry: agree |
+| null.badssl.com | TLS 1.2, TLS_ECDH_anon_WITH_AES_256_CBC_SHA; Anonymous key exchange | F | accepts TLS 1.1, TLS 1.2; DH 1024; weak suites: TLS_DH_anon_WITH_AES_128_CBC_SHA, TLS_DH_anon_WITH_AES_128_CBC_SHA256, TLS_DH_anon_WITH_AES_128_GCM_SHA256 ...; Mozilla-trusted | version: agree, cipher: agree |
